@@ -3,9 +3,15 @@
 
 
 
+\usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[a4paper, margin = 2cm]{geometry}
 \usepackage{cancel}
 \usepackage{tabularray}
+
+
+
+\everymath{\displaystyle{}}
 
 \DefTblrTemplate{caption}{default}{}
 
@@ -26,15 +32,15 @@
 
 
 \NewDocumentCommand{\njphxproof}{m}{
-	\begin{longtblr}[expand = \expanded]{|Xr|}
+	\begin{longtblr}[expand = \njphxeqb\njphxeqs\njphxeqf]{colspec = {|llX[r]|}, rowsep = 4pt}
 	#1
-	& $\blacksquare$ \\
+	& & $\blacksquare$ \\
 	\hline{}
 	\end{longtblr}
 }
 
+\DeclareMathOperator{\lcm}{lcm}
 
-
-\NewExpandableDocumentCommand{\njphxeqb}{O{}m}{\hline{}#2&#1\\}
-\NewExpandableDocumentCommand{\njphxeqs}{O{}m}{#2&#1\\}
-\NewExpandableDocumentCommand{\njphxeqf}{O{}m}{\hline{}#2&Final answer. #1\\}
+\newcommand{\njphxeqb}[3]{\hline{}#1&#2&#3\\}
+\newcommand{\njphxeqs}[3]{#1&#2&#3\\}
+\newcommand{\njphxeqf}[3]{\hline{}#1&#2&Final answer. #3\\}
