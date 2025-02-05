@@ -22,6 +22,9 @@
 	\maketitle{}
 		\pagebreak{}
 
+	\tableofcontents{}
+		\pagebreak{}
+
 	\section{} Solve the following equations.
 		\subsection{} \[x + 9 = 5 - 3x\]
 			\njphxproof{
@@ -83,7 +86,7 @@
 
 		\subsection{} \[\frac{1}{4 - x} + \frac{3}{6 + x} = 0\]
 			\njphxproof{
-				\njphxeqb{}{$\frac{6 + x}{(4 - x)(6 + x)} + \frac{3(4 - x)}{(4 - x)(6 + x)} = 0$}{$\lcm = (4 - x)(6 + x)$}
+				\njphxeqb{}{$\frac{6 + x}{(4 - x)(6 + x)} + \frac{3(4 - x)}{(4 - x)(6 + x)} = 0$}{$\lcm = (4 - x)(6 + x)$.}
 				\njphxeqs{$x \not\in \{4, -6\}$}{$6 + x + 3(4 - x) = 0$}{Cancel denominators.}
 				\njphxeqs{$x \not\in \{4, -6\}$}{$6 + x + 12 - 3x = 0$}{}
 				\njphxeqs{$x \not\in \{4, -6\}$}{$-2x = -18$}{}
@@ -93,10 +96,43 @@
 		\subsection{} \[\frac{3}{x^2 - 9} - \frac{7}{x - 3} = -\frac{4}{x + 3}\]
 			\njphxproof{
 				\njphxeqb{}{$\frac{3}{(x - 3)(x + 3)} - \frac{7}{x - 3} = -\frac{4}{x + 3}$}{Factor using difference of two squares.}
-				\njphxeqs{}{$\frac{3}{(x - 3)(x + 3)} - \frac{7(x + 3)}{(x - 3)(x + 3)} = -\frac{4(x - 3)}{(x - 3)(x + 3)}$}{$\lcm = (x - 3)(x + 3)$}
+				\njphxeqs{}{$\frac{3}{(x - 3)(x + 3)} - \frac{7(x + 3)}{(x - 3)(x + 3)} = -\frac{4(x - 3)}{(x - 3)(x + 3)}$}{$\lcm = (x - 3)(x + 3)$.}
 				\njphxeqs{$x \not\in \{-3, 3\}$}{$3 - 7(x + 3) = -4(x - 3)$}{Cancel denominators.}
 				\njphxeqs{$x \not\in \{-3, 3\}$}{$3 - 7x - 21 = -4x + 12$}{}
 				\njphxeqs{$x \not\in \{-3, 3\}$}{$-3x = 30$}{}
 				\njphxeqf{}{$x = -10$}{}
+			}
+
+		\subsection{} \[\frac{3}{x^2 - x - 6} = \frac{4}{2x^2 + x - 6}\]
+			\njphxproof{
+				\njphxeqb{}{$\frac{3}{(x - 3)(x + 2)} = \frac{4}{2x^2 + 4x - 3x - 6}$}{Factor.}
+				\njphxeqs{}{$\frac{3}{(x - 3)(x + 2)} = \frac{4}{2x(x + 2) - 3(x + 2)}$}{}
+				\njphxeqs{}{$\frac{3}{(x - 3)(x + 2)} = \frac{4}{(2x - 3)(x + 2)}$}{}
+				\njphxeqs{}{$\frac{3(2x - 3)}{(2x - 3)(x - 3)(x + 2)} = \frac{4(x - 3)}{(2x - 3)(x - 3)(x + 2)}$}{$\lcm = (2x - 3)(x - 3)(x + 2)$.}
+				\njphxeqs{$x \not\in \left\{\frac{3}{2}, 3, -2\right\}$}{$3(2x - 3) = 4(x - 3)$}{Cancel denominators.}
+				\njphxeqs{$x \not\in \left\{\frac{3}{2}, 3, -2\right\}$}{$6x - 9 = 4x - 12$}{}
+				\njphxeqs{$x \not\in \left\{\frac{3}{2}, 3, -2\right\}$}{$2x = -3$}{}
+				\njphxeqf{}{$x = -\frac{3}{2}$}{}
+			}
+
+		\subsection{} \[\frac{2}{y + 1} - \frac{3}{1 - y} = \frac{5}{y}\]
+			\njphxproof{
+				\njphxeqb{}{$\frac{2y(1 - y)}{y + 1} - \frac{3y(y + 1)}{1 - y} = \frac{5(y + 1)(1 - y)}{y}$}{$\lcm = (y + 1)(1 - y)(y)$.}
+				\njphxeqs{$x \not\in \{-1, 1, 0\}$}{$2y(1 - y) - 3y(y + 1) = 5(y + 1)(1 - y)$}{Cancel denominators.}
+				\njphxeqs{$x \not\in \{-1, 1, 0\}$}{$2y - 2y^2 - 3y^2 - 3y = (5y + 5)(1 - y)$}{}
+				\njphxeqs{$x \not\in \{-1, 1, 0\}$}{$2y - 2y^2 - 3y^2 - 3y = 5y - 5y^2 + 5 - 5y$}{}
+				\njphxeqs{$x \not\in \{-1, 1, 0\}$}{$-5y^2 - y = -5y^2 + 5$}{}
+				\njphxeqf{}{$y = -5$}{}
+			}
+
+		\subsection{} \[\frac{x + 17}{x^2 - 6x + 8} + \frac{x - 2}{x - 4} = \frac{x - 4}{x - 2}\]
+			\njphxproof{
+				\njphxeqb{}{$\frac{x + 17}{(x - 2)(x - 4)} + \frac{x - 2}{x - 4} = \frac{x - 4}{x - 2}$}{Factor.}
+				\njphxeqs{}{$\frac{x + 17}{(x - 2)(x - 4)} + \frac{{(x - 2)}^2}{(x - 2)(x - 4)} = \frac{{(x - 4)}^2}{(x - 2)(x - 4)}$}{$\lcm = (x - 4)(x - 2)$.}
+				\njphxeqs{$x \not\in \{2, 4\}$}{$x + 17 + {(x - 2)}^2 = {(x - 4)}^2$}{Cancel denominators.}
+				\njphxeqs{$x \not\in \{2, 4\}$}{$x + 17 + x^2 - 4x + 4 = x^2 - 8x + 16$}{}
+				\njphxeqs{$x \not\in \{2, 4\}$}{$x^2 - x^2 + x - 4x + 8x + 17 + 4 - 16 = 0$}{Rewrite in standard form.}
+				\njphxeqs{$x \not\in \{2, 4\}$}{$5x + 5 = 0$}{}
+				\njphxeqf{}{$x = -1$}{}
 			}
 \end{document}
