@@ -1,0 +1,40 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{tabularray}
+
+\DefTblrTemplate{caption}{default}{}
+
+
+
+\NewDocumentCommand{\njphxboilerplate}{mm}{%
+	\title{
+		#1\\
+		#2
+	}
+
+	\author{
+		Nile Jocson \\
+		\textless{}atraphaxia@gmail.com\textgreater{}
+	}
+}
+
+
+
+\NewDocumentCommand{\njphxproof}{m}{
+	\begin{longtblr}[expand = \expanded]{|Xr|}
+	#1
+	& $\blacksquare$ \\
+	\hline{}
+	\end{longtblr}
+}
+
+
+
+\NewExpandableDocumentCommand{\njphxeqb}{O{}m}{\hline{}#2&#1\\}
+\NewExpandableDocumentCommand{\njphxeqs}{O{}m}{#2&#1\\}
+\NewExpandableDocumentCommand{\njphxeqf}{O{}m}{\hline{}#2&Final answer. #1\\}

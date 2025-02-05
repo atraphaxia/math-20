@@ -5,9 +5,7 @@
 
 \documentclass{article}
 
-\usepackage{amssymb}
-\usepackage{cancel}
-\usepackage{tabularray}
+\input{../common.tex}
 
 
 
@@ -15,30 +13,20 @@
 
 
 
-\title{
-	Math 20 \\
-	Equations and Inequalities
-}
-
-\author{
-	Nile Jocson \\
-	\textless{}atraphaxia@gmail.com\textgreater{}
-}
+\njphxboilerplate{Math 20}{Equations and Inequalities}
 
 
 
 \begin{document}
 	\maketitle{}
-	\pagebreak{}
+		\pagebreak{}
 
 	\section{} Solve the following equations.
 		\subsection{} $x + 9 = 5 - 3x$
-			\begin{longtblr}{Xr}
-				$x + 9 = 5 - 3x$ & Given. \\
-				$x + 3x = 5 - 9$ & Transpose like terms. \\
-				$4x = -4$ & Simplify. \\
-				\fbox{$x = -1$} & \\
-				& $\blacksquare$ \\
-			\end{longtblr}
-
+			\njphxproof{
+				\expanded{\njphxeqb[Given.]{$x + 9 = 5 - 3x$}}
+				\expanded{\njphxeqs[Transpose.]{$x + 3x = 5 - 9$}}
+				\expanded{\njphxeqs{$4x = -4$}}
+				\expanded{\njphxeqf{$x = -1$}}
+			}
 \end{document}
