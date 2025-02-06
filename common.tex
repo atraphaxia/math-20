@@ -17,7 +17,7 @@
 
 
 
-\NewDocumentCommand{\njphxboilerplate}{mm}{%
+\NewDocumentCommand{\phxboilerplate}{mm}{%
 	\title{
 		#1\\
 		#2
@@ -31,17 +31,16 @@
 
 
 
-\NewDocumentCommand{\njphxproof}{m}{
-	\begin{longtblr}[expand = \njphxeqb\njphxeqs\njphxeqf]{colspec = {|llX[r]|}, rowsep = 4pt}
+\NewDocumentCommand{\phxproof}{m}{
+	\begin{longtblr}[expand = \phxeqb\phxeqs\phxeqf]{colspec = {|llX[r]|}, rowsep = 4pt}
 		#1
 		& & $\blacksquare$ \\
 		\hline{}
 	\end{longtblr}
-	\pagebreak
 }
 
 \DeclareMathOperator{\lcm}{lcm}
 
-\newcommand{\njphxeqb}[3]{\hline{}#1&#2&#3\\}
-\newcommand{\njphxeqs}[3]{#1&#2&#3\\}
-\newcommand{\njphxeqf}[3]{\hline{}#1&#2&Final answer. #3\\}
+\newcommand{\phxeqb}[3]{\hline{}#1&#2&#3\\}
+\newcommand{\phxeqs}[3]{#1&#2&#3\\}
+\newcommand{\phxeqf}[3]{\hline{}#1&#2&Final answer. #3\\}
