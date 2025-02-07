@@ -86,6 +86,7 @@
 				\phxeqb{}{$(4 - x)(6 + x)(\frac{1}{4 - x} + \frac{3}{6 + x}) = 0$}{$\lcm = (4 - x)(6 + x)$.}
 				\phxeqs{$x \not\in \{4, -6\}$}{$6 + x + 3(4 - x) = 0$}{}
 				\phxeqs{$x \not\in \{4, -6\}$}{$6 + x + 12 - 3x = 0$}{}
+				\phxeqs{$x \not\in \{4, -6\}$}{$x - 3x = -6 - 12$}{}
 				\phxeqs{$x \not\in \{4, -6\}$}{$-2x = -18$}{}
 				\phxeqf{}{$x = 9$}{}
 			}
@@ -99,5 +100,75 @@
 				\phxeqs{$x \not\in \{3, -3\}$}{$-7x + 4x = 12 + 21 - 3$}{}
 				\phxeqs{$x \not\in \{3, -3\}$}{$-3x = 30$}{}
 				\phxeqf{}{$x = -10$}{}
+			}
+
+		\subsection{} \[\frac{3}{x^2 - x - 6} = \frac{4}{2x^2 + x - 6}\]
+			\phxproof{
+				\phxeqb{}{$\frac{3}{(x - 3)(x + 2)} = \frac{4}{(2x - 3)(x + 2)}$}{Factor by grouping.}
+				\phxeqs{}{\scalebox{0.7}{$\cancel{(x - 3)}(2x - 3)\cancel{(x + 2)}(\frac{3}{\cancel{(x - 3)}\cancel{(x + 2)}}) = (x - 3)\cancel{(2x - 3)}\cancel{(x + 2)}(\frac{4}{\cancel{(2x - 3)}\cancel{(x + 2)}})$}}{$lcm = (x - 3)(2x - 3)(x + 2)$.}
+				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$3(2x - 3) = 4(x - 3)$}{}
+				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$6x - 9 = 4x - 12$}{}
+				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$6x - 4x = -12 + 9$}{}
+				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$2x = -3$}{}
+				\phxeqf{}{$x = -\frac{3}{2}$}{}
+			}
+
+		\subsection{} \[\frac{2}{y + 1} - \frac{3}{1 - y} = \frac{5}{y}\]
+			\phxproof{
+				\phxeqb{}{$y\cancel{(y + 1)}\cancel{(1 - y)}(\frac{2}{\cancel{y + 1}} - \frac{3}{\cancel{1 - y}}) = \cancel{y}(y + 1)(1 - y)(\frac{5}{\cancel{y}})$}{$\lcm = y(y + 1)(1 - y)$.}
+				\phxeqs{$y \not\in \{0, -1, 1\}$}{$2y(1 - y) - 3y(y + 1) = 5(y + 1)(1 - y)$}{}
+				\phxeqs{$y \not\in \{0, -1, 1\}$}{$2y - 2y^2 - 3y^2 - 3y = 5(1 - y^2)$}{$y + 1 = 1 + y$, expand using difference of two squares.}
+				\phxeqs{$y \not\in \{0, -1, 1\}$}{$-2y^2 - 3y^2 - 3y + 2y = 5 - 5y^2$}{}
+				\phxeqs{$y \not\in \{0, -1, 1\}$}{$\cancel{-5y^2} - y = 5 - \cancel{5y^2}$}{}
+				\phxeqf{}{$y = -5$}{}
+			}
+
+		\subsection{} \[\frac{x + 17}{x^2 - 6x + 8} + \frac{x - 2}{x - 4} = \frac{x - 4}{x - 2}\]
+			\phxproof{
+				\phxeqb{}{$\frac{x + 17}{(x - 2)(x - 4)} + \frac{x - 2}{x - 4} = \frac{x - 4}{x - 2}$}{Factor by grouping.}
+				\phxeqs{}{$(x - 2)(x - 4)(\frac{x + 17}{(x - 2)(x - 4)} + \frac{x - 2}{x - 4}) = (x - 2)(x - 4)(\frac{x - 4}{x - 2})$}{$\lcm = (x - 2)(x - 4)$.}
+				\phxeqs{$x \not\in \{2, 4\}$}{$x + 17 + {(x - 2)}^2 = {(x - 4)}^2$}{}
+				\phxeqs{$x \not\in \{2, 4\}$}{$x + 17 + x^2 - 4x + 4 = x^2 - 8x + 16$}{}
+				\phxeqs{$x \not\in \{2, 4\}$}{$\cancel{x^2} - 4x + x + 4 + 17 = \cancel{x^2} - 8x + 16$}{}
+				\phxeqs{$x \not\in \{2, 4\}$}{$-3x + 21 = -8x + 16$}{}
+				\phxeqs{$x \not\in \{2, 4\}$}{$-3x + 8x = 16 - 21$}{}
+				\phxeqs{$x \not\in \{2, 4\}$}{$5x = -5$}{}
+				\phxeqf{}{$x = -1$}{}
+			}
+
+		\subsection{} \[\frac{w}{3w^2 - 8w + 4} = \frac{w + 2}{3w^2 + w - 2}\]
+			\phxproof{
+				\phxeqb{}{$\frac{w}{3w^2 - 6w - 2w + 4} = \frac{w + 2}{3w^2 + 3w - 2w - 2}$}{Factor by grouping.}
+				\phxeqs{}{$\frac{w}{(3w - 2)(w - 2)} = \frac{w + 2}{(3w - 2)(w + 1)}$}{}
+				\phxeqs{}{\scalebox{0.6}{$(3w - 2)(w - 2)(w + 1)(\frac{w}{(3w - 2)(w - 2)}) = (3w - 2)(w - 2)(w + 1)(\frac{w + 2}{(3w - 2)(w + 1)})$}}{$\lcm = (3w - 2)(w - 2)(w + 1)$.}
+				\phxeqs{$w \not\in \left\{\frac{2}{3}, 2, -1\right\}$}{$w(w + 1) = (w + 2)(w - 2)$}{}
+				\phxeqs{$w \not\in \left\{\frac{2}{3}, 2, -1\right\}$}{$\cancel{w^2} + w = \cancel{w^2} - 4$}{Expand using difference of two squares.}
+				\phxeqf{}{$w = -4$}{}
+			}
+
+		\subsection{} \[\frac{3}{x + 4} = \frac{2}{3x - 2}\]
+			\phxproof{
+				\phxeqb{}{$(x + 4)(3x - 2)(\frac{3}{x + 4}) = (x + 4)(3x - 2)(\frac{2}{3x - 2})$}{$\lcm = (x + 4)(3x - 2)$.}
+				\phxeqs{$x \not\in \left\{-4, \frac{2}{3}\right\}$}{$3(3x - 2) = 2(x + 4)$}{}
+				\phxeqs{$x \not\in \left\{-4, \frac{2}{3}\right\}$}{$9x - 6 = 2x + 8$}{}
+				\phxeqs{$x \not\in \left\{-4, \frac{2}{3}\right\}$}{$9x - 2x = 8 + 6$}{}
+				\phxeqs{$x \not\in \left\{-4, \frac{2}{3}\right\}$}{$7x = 14$}{}
+				\phxeqf{}{$x = 2$}{}
+			}
+
+		\subsection{} \[\frac{x + 4}{x + 2} = \frac{2x - 3}{x - 5}\]
+			\phxproof{
+				\phxeqb{}{$(x + 2)(x - 5)(\frac{x + 4}{x + 2}) = (x + 2)(x - 5)(\frac{2x - 3}{x - 5})$}{$\lcm = (x + 2)(x - 5)$.}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$(x + 4)(x - 5) = (2x - 3)(x + 2)$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$x^2 - x - 20 = 2x^2 + x - 6$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$x^2 - 2x^2 - x - x - 20 + 6 = 0$}{Rewrite in standard form.}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$-x^2 - 2x - 14 = 0$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$x^2 + 2x + 14 = 0$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm \sqrt{2^2 - 4(1)(14)}}{2(1)}$}{Use the quadratic formula.}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm \sqrt{4 - 56}}{2}$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm \sqrt{-52}}{2}$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm i\sqrt{4}\sqrt{13}}{2}$}{}
+				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm 2i\sqrt{13}}{2}$}{}
+				\phxeqf{}{$-1 \pm i\sqrt{13}$}{}
 			}
 \end{document}
