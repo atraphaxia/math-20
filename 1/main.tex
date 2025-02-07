@@ -87,14 +87,14 @@
 				\phxeqs{$x \not\in \{4, -6\}$}{$6 + x + 3(4 - x) = 0$}{}
 				\phxeqs{$x \not\in \{4, -6\}$}{$6 + x + 12 - 3x = 0$}{}
 				\phxeqs{$x \not\in \{4, -6\}$}{$x - 3x = -6 - 12$}{}
-				\phxeqs{$x \not\in \{4, -6\}$}{$-2x = -18$}{}
+				\phxeqs{$x \not\in \{4, -6\}$}{$2x = -18$}{}
 				\phxeqf{}{$x = 9$}{}
 			}
 
 		\subsection{} \[\frac{3}{x^2 - 9} - \frac{7}{x - 3} = -\frac{4}{x + 3}\]
 			\phxproof{
 				\phxeqb{}{$\frac{3}{(x - 3)(x + 3)} - \frac{7}{x - 3} = -\frac{4}{x + 3}$}{Factor using difference of two squares.}
-				\phxeqs{}{$\cancel{(x - 3)}\cancel{(x + 3)}(\frac{3}{\cancel{(x - 3)}\cancel{(x + 3)}} - \frac{7}{\cancel{x - 3}}) = \cancel{(x - 3)}\cancel{(x + 3)}(-\frac{4}{\cancel{x + 3}})$}{$lcm = (x - 3)(x + 3)$.}
+				\phxeqs{}{$(x - 3)(x + 3)(\frac{3}{(x - 3)(x + 3)} - \frac{7}{x - 3}) = (x - 3)(x + 3)(-\frac{4}{x + 3})$}{$lcm = (x - 3)(x + 3)$.}
 				\phxeqs{$x \not\in \{3, -3\}$}{$3 - 7(x + 3) = -4(x - 3)$}{}
 				\phxeqs{$x \not\in \{3, -3\}$}{$3 - 7x - 21 = -4x + 12$}{}
 				\phxeqs{$x \not\in \{3, -3\}$}{$-7x + 4x = 12 + 21 - 3$}{}
@@ -105,7 +105,7 @@
 		\subsection{} \[\frac{3}{x^2 - x - 6} = \frac{4}{2x^2 + x - 6}\]
 			\phxproof{
 				\phxeqb{}{$\frac{3}{(x - 3)(x + 2)} = \frac{4}{(2x - 3)(x + 2)}$}{Factor by grouping.}
-				\phxeqs{}{\scalebox{0.7}{$\cancel{(x - 3)}(2x - 3)\cancel{(x + 2)}(\frac{3}{\cancel{(x - 3)}\cancel{(x + 2)}}) = (x - 3)\cancel{(2x - 3)}\cancel{(x + 2)}(\frac{4}{\cancel{(2x - 3)}\cancel{(x + 2)}})$}}{$lcm = (x - 3)(2x - 3)(x + 2)$.}
+				\phxeqs{}{\scalebox{0.7}{$(x - 3)(2x - 3)(x + 2)(\frac{3}{(x - 3)(x + 2)}) = (x - 3)(2x - 3)(x + 2)(\frac{4}{(2x - 3)(x + 2)})$}}{$lcm = (x - 3)(2x - 3)(x + 2)$.}
 				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$3(2x - 3) = 4(x - 3)$}{}
 				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$6x - 9 = 4x - 12$}{}
 				\phxeqs{$x \not\in \left\{3, \frac{3}{2}, -2\right\}$}{$6x - 4x = -12 + 9$}{}
@@ -115,7 +115,7 @@
 
 		\subsection{} \[\frac{2}{y + 1} - \frac{3}{1 - y} = \frac{5}{y}\]
 			\phxproof{
-				\phxeqb{}{$y\cancel{(y + 1)}\cancel{(1 - y)}(\frac{2}{\cancel{y + 1}} - \frac{3}{\cancel{1 - y}}) = \cancel{y}(y + 1)(1 - y)(\frac{5}{\cancel{y}})$}{$\lcm = y(y + 1)(1 - y)$.}
+				\phxeqb{}{$(y + 1)(1 - y)(\frac{2}{y + 1} - \frac{3}{1 - y}) = y(y + 1)(1 - y)(\frac{5}{y})$}{$\lcm = y(y + 1)(1 - y)$.}
 				\phxeqs{$y \not\in \{0, -1, 1\}$}{$2y(1 - y) - 3y(y + 1) = 5(y + 1)(1 - y)$}{}
 				\phxeqs{$y \not\in \{0, -1, 1\}$}{$2y - 2y^2 - 3y^2 - 3y = 5(1 - y^2)$}{$y + 1 = 1 + y$, expand using difference of two squares.}
 				\phxeqs{$y \not\in \{0, -1, 1\}$}{$-2y^2 - 3y^2 - 3y + 2y = 5 - 5y^2$}{}
@@ -170,5 +170,84 @@
 				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm i\sqrt{4}\sqrt{13}}{2}$}{}
 				\phxeqs{$x \not\in \{-2, 5\}$}{$\frac{-2 \pm 2i\sqrt{13}}{2}$}{}
 				\phxeqf{}{$-1 \pm i\sqrt{13}$}{}
+			}
+
+		\subsection{} \[\frac{4}{z - 2} = \frac{z}{6}\]
+			\phxproof{
+				\phxeqb{}{$6(z - 2)(\frac{4}{z - 2}) = 6(z - 2)(\frac{z}{6})$}{$\lcm = 6(z - 2).$}
+				\phxeqs{$z \neq 2$}{$6(4) = z(z - 2)$}{}
+				\phxeqs{$z \neq 2$}{$24 = z^2 - 2z$}{}
+				\phxeqs{$z \neq 2$}{$z^2 - 2z - 24 = 0$}{Rewrite in standard form.}
+				\phxeqs{$z \neq 2$}{$(z - 6)(z + 4) = 0$}{}
+				\phxeqf{}{$x \in \{6, -4\}$}{}
+			}
+
+		\subsection{} \[\frac{1}{2x + 5} = \frac{4}{2x - 1}\]
+			\phxproof{
+				\phxeqb{}{$(2x + 5)(2x - 1)(\frac{1}{2x + 5}) = (2x + 5)(2x - 1)(\frac{4}{2x - 1})$}{$\lcm = (2x + 5)(2x - 1)$.}
+				\phxeqs{$x \not\in \left\{-\frac{5}{2}, \frac{1}{2}\right\}$}{$2x - 1 = 4(2x + 5)$}{}
+				\phxeqs{$x \not\in \left\{-\frac{5}{2}, \frac{1}{2}\right\}$}{$2x - 1 = 8x + 20$}{}
+				\phxeqs{$x \not\in \left\{-\frac{5}{2}, \frac{1}{2}\right\}$}{$2x - 8x = 20 + 1$}{}
+				\phxeqs{$x \not\in \left\{-\frac{5}{2}, \frac{1}{2}\right\}$}{$-6x = 21$}{}
+				\phxeqf{}{$x = -\frac{7}{2}$}{}
+			}
+
+		\subsection{} \[\frac{2}{3x} + \frac{4}{5x} = \frac{11}{15}\]
+			\phxproof{
+				\phxeqb{}{$15x(\frac{2}{3x} + \frac{4}{5x}) = 15x(\frac{11}{15})$}{$\lcm = 15x$.}
+				\phxeqs{$x \neq 0$}{$10 + 12 = 11x$}{}
+				\phxeqs{$x \neq 0$}{$22 = 11x$}{}
+				\phxeqf{}{$x = 2$}{}
+			}
+
+		\subsection{} \[\frac{5}{x + 3} = \frac{x + 8}{x + 3} - 3\]
+			\phxproof{
+				\phxeqb{}{$(x + 3)(\frac{5}{x + 3}) = (x + 3)(\frac{x + 8}{x + 3} - 3)$}{$\lcm = x + 3$.}
+				\phxeqs{$x \neq -3$}{$5 = x + 8 - 3(x + 3)$}{}
+				\phxeqs{$x \neq -3$}{$5 = x + 8 - 3x - 9$}{}
+				\phxeqs{$x \neq -3$}{$5 = -2x - 1$}{}
+				\phxeqs{$x \neq -3$}{$2x = -1 - 5$}{}
+				\phxeqs{$x \neq -3$}{$2x = -6$}{}
+				\phxeqs{$x \neq -3$}{$x = -3$}{}
+				\phxeqf{}{$x \in \emptyset$}{}
+			}
+
+		\subsection{} \[\frac{3x}{x + 2} = \frac{x + 4}{x}\]
+			\phxproof{
+				\phxeqb{}{$x(x + 2)(\frac{3x}{x + 2}) = x(x + 2)(\frac{x + 4}{x})$}{$\lcm = x(x + 2)$.}
+				\phxeqs{$x \not\in \{0, -2\}$}{$3x^2 = (x + 2)(x + 4)$}{}
+				\phxeqs{$x \not\in \{0, -2\}$}{$3x^2 = x^2 + 6x + 8$}{}
+				\phxeqs{$x \not\in \{0, -2\}$}{$3x^2 - x^2 - 6x - 8 = 0$}{Rewrite in standard form.}
+				\phxeqs{$x \not\in \{0, -2\}$}{$2x^2 - 6x - 8 = 0$}{}
+				\phxeqs{$x \not\in \{0, -2\}$}{$x^2 - 3x - 4 = 0$}{}
+				\phxeqs{$x \not\in \{0, -2\}$}{$(x - 4)(x + 1) = 0$}{Factor by grouping.}
+				\phxeqf{}{$x \in \{4, -1\}$}{}
+			}
+
+		\subsection{} \[\frac{x + 4}{x + 2} - \frac{2x - 3}{x - 5} = \frac{3x - 8}{x^2 - 3x - 10}\]
+			\phxproof{
+				\phxeqb{}{$\frac{x + 4}{x + 2} - \frac{2x - 3}{x - 5} = \frac{3x - 8}{(x - 5)(x + 2)}$}{Factor by grouping.}
+				\phxeqs{}{$(x - 5)(x + 2)(\frac{x + 4}{x + 2} - \frac{2x - 3}{x - 5}) = (x - 5)(x + 2)(\frac{3x - 8}{(x - 5)(x + 2)})$}{$\lcm = (x - 5)(x + 2)$.}
+				\phxeqs{$x \not\in \{5, -2\}$}{$(x + 4)(x - 5) - (2x - 3)(x + 2) = 3x - 8$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$x^2 - x - 20 - (2x^2 + x - 6) = 3x - 8$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$x^2 - x - 20 - 2x^2 - x + 6 = 3x - 8$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$x^2 - 2x^2 - x - x - 20 + 6 = 3x - 8$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$-x^2 - 2x - 14 = 3x - 8$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$-x^2 - 2x - 3x - 14 + 8 = 0$}{Rewrite in standard form.}
+				\phxeqs{$x \not\in \{5, -2\}$}{$-x^2 - 5x - 6 = 0$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$x^2 + 5x + 6 = 0$}{}
+				\phxeqs{$x \not\in \{5, -2\}$}{$(x + 2)(x + 3) = 0$}{Factor by grouping.}
+				\phxeqs{$x \not\in \{5, -2\}$}{$x \in \{-2, -3\}$}{}
+				\phxeqf{}{$x = -3$}{}
+			}
+
+		\subsection{} \[1 + \frac{5x}{6} = \frac{2x^2}{3}\]
+			\phxproof{
+				\phxeqb{}{$6(1 + \frac{5x}{6}) = 6(\frac{2x^2}{3})$}{$\lcm = 6$.}
+				\phxeqs{}{$6 + 5x = 4x^2$}{}
+				\phxeqs{}{$4x^2 - 5x - 6 = 0$}{Rewrite in standard form.}
+				\phxeqs{}{$4x^2 - 8x + 3x - 6 = 0$}{Factor by grouping.}
+				\phxeqs{}{$(4x + 3)(x - 2) = 0$}{}
+				\phxeqf{}{$x \in \left\{-\frac{3}{4}, 2\right\}$}{}
 			}
 \end{document}
