@@ -1,0 +1,153 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\subsection{} \[\abs{7 - 2w} = 9\]
+	\phxproof{
+		\phxeqb{}{$7 - 2w = 9$}{Solve positive case.}
+		\phxeqs{}{$-2w = 9 - 7$}{}
+		\phxeqs{}{$-2w = 2$}{}
+		\phxeqs{}{$w = -1$}{}
+		\phxeqb{}{$7 - 2w = -9$}{Solve negative case.}
+		\phxeqs{}{$-2w = -9 - 7$}{}
+		\phxeqs{}{$-2w = -16$}{}
+		\phxeqs{}{$w = 8$}{}
+		\phxeqs{}{$w \in \{-1, 8\}$}{}
+	}
+
+\subsection{} \[\abs{3x - 2} = \abs{2x + 3}\]
+	\phxproof{
+		\phxeqb{}{$3x - 2 = 2x + 3$}{Solve positive case.}
+		\phxeqs{}{$3x - 2x = 3 + 2$}{}
+		\phxeqs{}{$x = 5$}{}
+		\phxeqb{}{$3x - 2 = -(2x + 3)$}{Solve negative case.}
+		\phxeqs{}{$3x - 2 = -2x - 3$}{}
+		\phxeqs{}{$3x + 2x = -3 + 2$}{}
+		\phxeqs{}{$5x = -1$}{}
+		\phxeqs{}{$x = -\frac{1}{5}$}{}
+		\phxeqb{}{$\abs{3(5) - 2} = \abs{2(5) + 3}$}{Check $x = 5$.}
+		\phxeqs{}{$\abs{15 - 2} = \abs{10 + 3}$}{}
+		\phxeqs{}{$13 = 13$}{}
+		\phxeqb{}{$\abs{3\left(-\frac{1}{5}\right) - 2} = \abs{2\left(-\frac{1}{5}\right) + 3}$}{Check $x = -\frac{1}{5}$.}
+		\phxeqs{}{$\abs{-\frac{3}{5} - 2} = \abs{-\frac{2}{5} + 3}$}{}
+		\phxeqs{}{$\abs{-\frac{3}{5} - \frac{10}{5}} = \abs{-\frac{2}{5} + \frac{15}{5}}$}{}
+		\phxeqs{}{$\frac{13}{5} = \frac{13}{5}$}{}
+		\phxeqf{}{$x \in \left\{5, -\frac{1}{5}\right\}$}{}
+	}
+
+\subsection{} \[\abs{x - 4} = \abs{5 - 2x}\]
+	\phxproof{
+		\phxeqb{}{$x - 4 = 5 - 2x$}{Solve positive case.}
+		\phxeqs{}{$x + 2x = 5 + 4$}{}
+		\phxeqs{}{$3x = 9$}{}
+		\phxeqs{}{$x = 3$}{}
+		\phxeqb{}{$x - 4 = -(5 - 2x)$}{Solve negative case.}
+		\phxeqs{}{$x - 4 = 2x - 5$}{}
+		\phxeqs{}{$x - 2x = -5 + 4$}{}
+		\phxeqs{}{$x = 1$}{}
+		\phxeqb{}{$\abs{3 - 4} = \abs{5 - 2(3)}$}{Check $x = 3$.}
+		\phxeqs{}{$\abs{3 - 4} = \abs{5 - 6}$}{}
+		\phxeqs{}{$1 = 1$}{}
+		\phxeqb{}{$\abs{1 - 4} = \abs{5 - 2(1)}$}{Check $x = 1$.}
+		\phxeqs{}{$\abs{1 - 4} = \abs{5 - 2}$}{}
+		\phxeqs{}{$3 = 3$}{}
+		\phxeqf{}{$x \in \{1, 3\}$}{}
+	}
+
+\subsection{} \[\abs{\frac{x + 3}{x - 3}} = 7\]
+	\phxproof{
+		\phxeqb{}{$\frac{x + 3}{x - 3} = 7$}{Solve positive case.}
+		\phxeqs{$x \neq 3$}{$x + 3 = 7(x - 3)$}{}
+		\phxeqs{$x \neq 3$}{$x + 3 = 7x - 21$}{}
+		\phxeqs{$x \neq 3$}{$x - 7x = -21 - 3$}{}
+		\phxeqs{$x \neq 3$}{$-6x = -24$}{}
+		\phxeqs{}{$x = 4$}{}
+		\phxeqb{}{$\frac{x + 3}{x - 3} = 7$}{Solve negative case.}
+		\phxeqs{$x \neq 3$}{$x + 3 = -7(x - 3)$}{}
+		\phxeqs{$x \neq 3$}{$x + 3 = -7x + 21$}{}
+		\phxeqs{$x \neq 3$}{$x + 7x = 21 - 3$}{}
+		\phxeqs{$x \neq 3$}{$8x = 18$}{}
+		\phxeqs{$x \neq 3$}{$x = \frac{18}{8}$}{}
+		\phxeqs{}{$x = \frac{9}{4}$}{}
+		\phxeqf{}{$x \in \left\{4, \frac{9}{4}\right\}$}{}
+	}
+
+\subsection{} \[\abs{\frac{2x + 1}{x - 1}} = 3\]
+	\phxproof{
+		\phxeqb{}{$\frac{2x + 1}{x - 1} = 3$}{Solve positive case.}
+		\phxeqs{$x \neq 1$}{$2x + 1 = 3(x - 1)$}{}
+		\phxeqs{$x \neq 1$}{$2x + 1 = 3x - 3$}{}
+		\phxeqs{$x \neq 1$}{$2x - 3x = -3 - 1$}{}
+		\phxeqs{}{$x = 4$}{}
+		\phxeqb{}{$\frac{2x + 1}{x - 1} = -3$}{Solve negativee case.}
+		\phxeqs{$x \neq 1$}{$2x + 1 = -3(x - 1)$}{}
+		\phxeqs{$x \neq 1$}{$2x + 1 = -3x + 3$}{}
+		\phxeqs{$x \neq 1$}{$2x + 3x = 3 - 1$}{}
+		\phxeqs{$x \neq 1$}{$5x = 2$}{}
+		\phxeqs{}{$x = \frac{2}{5}$}{}
+		\phxeqf{}{$x \in \left\{4, \frac{2}{5}\right\}$}{}
+	}
+
+\subsection{} \[\abs{3t - 2} = t^2\]
+	\phxproof{
+		\phxeqb{}{$3t - 2 = t^2$}{Solve positive case.}
+		\phxeqs{}{$t^2 - 3t + 2 = 0$}{Rewrite in standard form.}
+		\phxeqs{}{$(t - 2)(t - 1) = 0$}{Factor by grouping.}
+		\phxeqs{}{$t \in \{2, 1\}$}{}
+		\phxeqb{}{$3t - 2 = -t^2$}{Solve negative case.}
+		\phxeqs{}{$t^2 + 3t - 2 = 0$}{Rewrite in standard form.}
+		\phxeqs{}{$t = \frac{-3 \pm \sqrt{3^2 - 4(1)(-2)}}{2(1)}$}{Use the quadratic formula.}
+		\phxeqs{}{$t = \frac{-3 \pm \sqrt{9 + 8}}{2}$}{}
+		\phxeqs{}{$t = \frac{-3 \pm \sqrt{17}}{2}$}{}
+		\phxeqf{}{$t \in \left\{2, 1, \frac{-3 \pm \sqrt{17}}{2}\right\}$}{}
+	}
+
+\subsection{} \[\abs{3t - 2} = -t^2\]
+	\phxproof{
+		\phxeqf{}{$t \in \emptyset$}{Since $t^2$ will always be positive, $-t^2$ will always be negative. The absolute value of a real number cannot be negative.}
+	}
+
+\subsection{} \[\abs{3x + 5} = 9\]
+	\phxproof{
+		\phxeqb{}{$3x + 5 = 9$}{Solve positive case.}
+		\phxeqs{}{$3x = 9 - 5$}{}
+		\phxeqs{}{$3x = 4$}{}
+		\phxeqs{}{$x = \frac{4}{3}$}{}
+		\phxeqb{}{$3x + 5 = -9$}{Solve negative case.}
+		\phxeqs{}{$3x = -9 - 5$}{}
+		\phxeqs{}{$3x = -14$}{}
+		\phxeqs{}{$x = -\frac{14}{3}$}{}
+		\phxeqf{}{$x \in \left\{\frac{4}{3}, -\frac{14}{3}\right\}$}{}
+	}
+
+\subsection{} \[\abs{-3x + 7} - 3 = 0\]
+	\phxproof{
+		\phxeqb{}{$\abs{-3x + 7} = 3$}{}
+		\phxeqb{}{$-3x + 7 = 3$}{Solve positive case.}
+		\phxeqs{}{$-3x = 3 - 7$}{}
+		\phxeqs{}{$-3x = -4$}{}
+		\phxeqs{}{$x = \frac{4}{3}$}{}
+		\phxeqb{}{$-3x + 7 = -3$}{Solve negative case.}
+		\phxeqs{}{$-3x = -3 - 7$}{}
+		\phxeqs{}{$-3x = -10$}{}
+		\phxeqs{}{$x = \frac{10}{3}$}{}
+		\phxeqf{}{$x \in \left\{\frac{4}{3}, \frac{10}{3}\right\}$}{}
+	}
+
+\subsection{} \[\abs{\frac{x}{2x - 3}} = 2\]
+	\phxproof{
+		\phxeqb{}{$\frac{x}{2x - 3} = 2$}{Solve positive case.}
+		\phxeqs{$x \neq \frac{3}{2}$}{$x = 2(2x - 3)$}{}
+		\phxeqs{$x \neq \frac{3}{2}$}{$x = 4x - 6$}{}
+		\phxeqs{$x \neq \frac{3}{2}$}{$x - 4x = -6$}{}
+		\phxeqs{$x \neq \frac{3}{2}$}{$-3x = -6$}{}
+		\phxeqs{}{$x = 2$}{}
+		\phxeqb{}{$\frac{x}{2x - 3} = -2$}{Solve negative case.}
+		\phxeqs{$x \neq \frac{3}{2}$}{$x = -2(2x - 3)$}{}
+		\phxeqs{$x \neq \frac{3}{2}$}{$x = -4x + 6$}{}
+		\phxeqs{$x \neq \frac{3}{2}$}{$x + 4x = 6$}{}
+		\phxeqs{$x \neq \frac{3}{2}$}{$5x = 6$}{}
+		\phxeqs{}{$x = \frac{6}{5}$}{}
+		\phxeqf{}{$x \in \left\{2, \frac{6}{5}\right\}$}{}
+	}
