@@ -1,0 +1,20 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\section{} Find all real values of $k$ such that there is exactly one solution to the equation.
+
+\subsection{} \[x^2 - kx + k = x - 2\]
+	\phxproof{
+		\phxeqb{}{$x^2 - kx - x + k + 2 = 0$}{Rewrite in standard form.}
+		\phxeqs{}{$x^2 - (k + 1)x + (k + 2) = 0$}{}
+		\phxeqb{}{${(k + 1)}^2 - 4(1)(k + 2) = 0$}{If the determinant $b^2 - 4ac$ is 0, the quadratic equation only has one solution.}
+		\phxeqs{}{$k^2 + 2k + 1 - 4k - 8 = 0$}{}
+		\phxeqs{}{$k^2 - 2k - 7 = 0$}{}
+		\phxeqs{}{$k = \frac{-(-2) \pm \sqrt{{(-2)}^2 - 4(1)(-7)}}{2(1)}$}{Use the quadratic formula.}
+		\phxeqs{}{$k = \frac{2 \pm \sqrt{4 + 28}}{2}$}{}
+		\phxeqs{}{$k = \frac{2 \pm \sqrt{32}}{2}$}{}
+		\phxeqs{}{$k = \frac{2 \pm 4\sqrt{2}}{2}$}{}
+		\phxeqf{}{$k = 1 \pm 2\sqrt{2}$}{}
+	}
