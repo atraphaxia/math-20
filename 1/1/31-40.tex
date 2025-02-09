@@ -160,12 +160,12 @@
 \subsection{} \[8{\left(x + \frac{1}{2x}\right)}^2 + 30\left(x + \frac{1}{2x}\right) + 27 = 0\]
 	\phxproof{
 		\phxeqb{}{$8t^2 + 30t + 27 = 0$}{$t = x + \frac{1}{2x}$.}
-		\phxeqs{}{$x = \frac{-30 \pm \sqrt{30^2 - 4(8)(27)}}{2(8)}$}{Use the quadratic formula.}
-		\phxeqs{}{$x = \frac{-30 \pm \sqrt{900 - 864}}{16}$}{}
-		\phxeqs{}{$x = \frac{-30 \pm \sqrt{36}}{16}$}{}
-		\phxeqs{}{$x \in \left\{\frac{-30 + 6}{16}, \frac{-30 - 6}{16}\right\}$}{}
-		\phxeqs{}{$x \in \left\{-\frac{24}{16}, -\frac{36}{16}\right\}$}{}
-		\phxeqs{}{$x \in \left\{-\frac{3}{2}, -\frac{9}{4}\right\}$}{}
+		\phxeqs{}{$t = \frac{-30 \pm \sqrt{30^2 - 4(8)(27)}}{2(8)}$}{Use the quadratic formula.}
+		\phxeqs{}{$t = \frac{-30 \pm \sqrt{900 - 864}}{16}$}{}
+		\phxeqs{}{$t = \frac{-30 \pm \sqrt{36}}{16}$}{}
+		\phxeqs{}{$t \in \left\{\frac{-30 + 6}{16}, \frac{-30 - 6}{16}\right\}$}{}
+		\phxeqs{}{$t \in \left\{-\frac{24}{16}, -\frac{36}{16}\right\}$}{}
+		\phxeqs{}{$t \in \left\{-\frac{3}{2}, -\frac{9}{4}\right\}$}{}
 		\phxeqb{}{$-\frac{3}{2} = x + \frac{1}{2x}$}{Solve for $x$, $t = -\frac{3}{2}$.}
 		\phxeqs{}{$2x\left(-\frac{3}{2}\right) = 2x\left(x + \frac{1}{2x}\right)$}{$\lcm = 2x$.}
 		\phxeqs{$x \neq 0$}{$-3x = 2x^2 + 1$}{}
@@ -181,4 +181,38 @@
 		\phxeqs{$x \neq 0$}{$(4x + 1)(x + 2) = 0$}{}
 		\phxeqs{}{$x \in \left\{-\frac{1}{4}, -2\right\}$}{}
 		\phxeqf{}{$x \in \left\{-\frac{1}{2}, -1, -\frac{1}{4}, -2\right\}$}{}
+	}
+
+\subsection{} \[\sqrt[4]{x} + 2\sqrt{x} = 3\]
+	\phxproof{
+		\phxeqb{}{$t + 2t^2 = 3$}{$t = \sqrt[4]{x}$.}
+		\phxeqs{}{$2t^2 + t - 3 = 0$}{Rewrite in standard form.}
+		\phxeqs{}{$2t^2 + 3t - 2t - 3 = 0$}{Factor by grouping.}
+		\phxeqs{}{$(t - 1)(2t + 3) = 0$}{}
+		\phxeqs{}{$t \in \left\{1, -\frac{3}{2}\right\}$}{}
+		\phxeqb{}{$1 = \sqrt[4]{x}$}{Solve for $x$, $t = 1$.}
+		\phxeqs{}{$x = 1$}{}
+		\phxeqb{}{$1 = \sqrt[4]{1}$}{Check $x = 1$.}
+		\phxeqs{}{$1 = 1$}{}
+		\phxeqb{}{$-\frac{3}{2} = \sqrt[4]{x}$}{Solve for $x$, $t = -\frac{3}{2}$.}
+		\phxeqs{}{$x = \frac{81}{16}$}{}
+		\phxeqb{}{$-\frac{3}{2} = \sqrt[4]{\frac{81}{16}}$}{Check $x = \frac{81}{16}$.}
+		\phxeqs{}{$-\frac{3}{2} \neq \frac{3}{2}$}{}
+		\phxeqf{}{$x = 1$}{}
+	}
+
+\subsection{} \[\sqrt{x} - 5\sqrt[4]{x} + 4 = 0\]
+	\phxproof{
+		\phxeqb{}{$t^2 - 5t + 4 = 0$}{$t = \sqrt[4]{x}$.}
+		\phxeqs{}{$(t - 4)(t - 1) = 0$}{Factor by grouping.}
+		\phxeqs{}{$t \in \{4, 1\}$}{}
+		\phxeqb{}{$4 = \sqrt[4]{x}$}{Solve for $x$, $t = 4$.}
+		\phxeqs{}{$x = 256$}{}
+		\phxeqb{}{$4 = \sqrt[4]{256}$}{Check $x = 256$.}
+		\phxeqs{}{$4 = 4$}{}
+		\phxeqb{}{$1 = \sqrt[4]{x}$}{Solve for $x$, $t = 1$.}
+		\phxeqs{}{$x = 1$}{}
+		\phxeqb{}{$4 = \sqrt[4]{1}$}{Check $x = 1$.}
+		\phxeqs{}{$1 = 1$}{}
+		\phxeqf{}{$x \in \{256, 1\}$}{}
 	}
