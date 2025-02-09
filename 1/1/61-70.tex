@@ -1,0 +1,82 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\subsection{} \[\abs{\frac{3x - 4}{2x + 3}} = 1\]
+	\phxproof{
+		\phxeqb{}{$\frac{3x - 4}{2x + 3} = 1$}{Solve positive case.}
+		\phxeqs{$x \neq -\frac{3}{2}$}{$3x - 4 = 2x + 3$}{}
+		\phxeqs{$x \neq -\frac{3}{2}$}{$3x - 2x = 3 + 4$}{}
+		\phxeqs{}{$x = 7$}{}
+		\phxeqb{}{$\frac{3x - 4}{2x + 3} = -1$}{Solve negative case.}
+		\phxeqs{$x \neq -\frac{3}{2}$}{$3x - 4 = -1(2x + 3)$}{}
+		\phxeqs{$x \neq -\frac{3}{2}$}{$3x - 4 = -2x - 3$}{}
+		\phxeqs{$x \neq -\frac{3}{2}$}{$3x + 2x = -3 + 4$}{}
+		\phxeqs{$x \neq -\frac{3}{2}$}{$5x = 1$}{}
+		\phxeqs{}{$x = \frac{1}{5}$}{}
+		\phxeqf{}{$x \in \left\{7, \frac{1}{5}\right\}$}{}
+	}
+
+\subsection{} \[\abs{2x - 3} = \abs{7 - 3x}\]
+	\phxproof{
+		\phxeqb{}{$2x - 3 = 7 - 3x$}{Solve positive case.}
+		\phxeqs{}{$2x + 3x = 7 + 3$}{}
+		\phxeqs{}{$5x = 10$}{}
+		\phxeqs{}{$x = 2$}{}
+		\phxeqb{}{$2x - 3 = -(7 - 3x)$}{Solve negative case.}
+		\phxeqs{}{$2x - 3 = -7 + 3x$}{}
+		\phxeqs{}{$2x - 3x = -7 + 3$}{}
+		\phxeqs{}{$x = 4$}{}
+		\phxeqb{}{$\abs{2(2) - 3} = \abs{7 - 3(2)}$}{Check $x = 2$.}
+		\phxeqs{}{$\abs{4 - 3} = \abs{7 - 6}$}{}
+		\phxeqs{}{$1 = 1$}{}
+		\phxeqb{}{$\abs{2(4) - 3} = \abs{7 - 3(4)}$}{Check $x = 4$.}
+		\phxeqs{}{$\abs{8 - 3} = \abs{7 - 12}$}{}
+		\phxeqs{}{$5 = 5$}{}
+		\phxeqf{}{$x \in \{2, 4\}$}{}
+	}
+
+\subsection{} \[\abs{4x - 3} = x\]
+	\phxproof{
+		\phxeqb{}{$4x - 3 = x$}{Solve positive case.}
+		\phxeqs{}{$3x = 3$}{}
+		\phxeqs{}{$x = 1$}{}
+		\phxeqb{}{$4x - 3 = -x$}{Solve negative case.}
+		\phxeqs{}{$5x = 3$}{}
+		\phxeqs{}{$x = \frac{3}{5}$}{}
+		\phxeqf{}{$x \in \left\{1, \frac{3}{5}\right\}$}{}
+	}
+
+\subsection{} \[\abs{3x + 8} = x\]
+	\phxproof{
+		\phxeqb{}{$3x + 8 = x$}{Solve positive case.}
+		\phxeqs{}{$2x = -8$}{}
+		\phxeqs{}{$x = -4$}{}
+		\phxeqb{}{$3x + 8 = -x$}{Solve negative case.}
+		\phxeqs{}{$4x = -8$}{}
+		\phxeqs{}{$x = -2$}{}
+		\phxeqf{}{$x \in \emptyset$}{$x$ cannot be negative; the absolute value of a real number cannot be negative.}
+	}
+
+\subsection{} \[\abs{4x - 3} = -x\]
+	\phxproof{
+		\phxeqb{}{$4x - 3 = -x$}{Solve positive case.}
+		\phxeqs{}{$5x = 3$}{}
+		\phxeqs{}{$x = \frac{3}{5}$}{}
+		\phxeqb{}{$4x - 3 = -(-x)$}{Solve negative case.}
+		\phxeqs{}{$3x = 3$}{}
+		\phxeqs{}{$x = 1$}{}
+		\phxeqf{}{$x \in \emptyset$}{$x$ cannot be positive because $-x$ would be negative; the absolute value of a real number cannot be negative.}
+	}
+
+\subsection{} \[\abs{3x + 8} = -x\]
+	\phxproof{
+		\phxeqb{}{$3x + 8 = -x$}{Solve negative case.}
+		\phxeqs{}{$4x = -8$}{}
+		\phxeqs{}{$x = -2$}{}
+		\phxeqb{}{$3x + 8 = -(-x)$}{Solve positive case.}
+		\phxeqs{}{$2x = -8$}{}
+		\phxeqs{}{$x = -4$}{}
+		\phxeqf{}{$x \in \{-2, -4\}$}{}
+	}
