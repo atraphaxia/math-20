@@ -5,9 +5,10 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{cancel}
 \usepackage[a4paper, margin = 2cm]{geometry}
 \usepackage{graphicx}
-\usepackage{cancel}
+\usepackage{mathtools}
 \usepackage{tabularray}
 
 
@@ -16,6 +17,15 @@
 
 \DefTblrTemplate{caption}{default}{}
 \DefTblrTemplate{capcont}{default}{}
+
+
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\makeatother
 
 
 
