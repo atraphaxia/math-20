@@ -1,0 +1,122 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\section{} Find the solution set of the following inequalities.
+
+\subsection{} \[x - 2 < 4 - x\]
+	\phxproof{
+		\phxeqs{}{$2x < 6$}{}
+		\phxeqs{}{$x < 3$}{}
+		\phxeqf{}{$x \in (-\infty, 3)$}{}
+	}
+
+\subsection{} \[x + 1 > \frac{2x - 4}{5}\]
+	\phxproof{
+		\phxeqs{}{$5x + 5 > 2x - 4$}{}
+		\phxeqs{}{$5x - 2x > -4 - 5$}{}
+		\phxeqs{}{$3x > -9$}{}
+		\phxeqs{}{$x > -3$}{}
+		\phxeqf{}{$x \in (-3, +\infty)$}{}
+	}
+
+\subsection{} \[\frac{2x - 3}{4} \geq \frac{7x}{2}\]
+	\phxproof{
+		\phxeqb{}{$4\left(\frac{2x - 3}{4}\right) \geq 4\left(\frac{7x}{2}\right)$}{$\lcm = 4$.}
+		\phxeqs{}{$2x - 3 \geq 14x$}{}
+		\phxeqs{}{$12x \leq -3$}{}
+		\phxeqs{}{$x \leq -\frac{3}{12}$}{}
+		\phxeqs{}{$x \leq -\frac{1}{4}$}{}
+		\phxeqf{}{$x \in \left(-\infty, -\frac{1}{4}\right]$}{}
+	}
+
+\subsection{} \[-2 < 5 + 3x < 20\]
+	\phxproof{
+		\phxeqb{}{$-7 < 3x < 15$}{}
+		\phxeqs{}{$-\frac{7}{3} < x < 5$}{}
+		\phxeqf{}{$x \in \left(-\frac{7}{3}, 5\right)$}{}
+	}
+
+\subsection{} \[5 \leq 3x - 4 \leq 7\]
+	\phxproof{
+		\phxeqb{}{$9 \leq 3x \leq 11$}{}
+		\phxeqs{}{$3 \leq x \leq \frac{11}{3}$}{}
+		\phxeqf{}{$x \in \left[3, \frac{11}{3}\right]$}{}
+	}
+
+\subsection{} \[2x - 1 \leq 3x \leq 4x + 1\]
+	\phxproof{
+		\phxeqb{}{$2x - 1 \leq 3x$}{Solve left inequality.}
+		\phxeqs{}{$x \geq -1$}{}
+		\phxeqb{}{$3x \leq 4x + 1$}{Solve right inequality.}
+		\phxeqs{}{$x \geq -1$}{}
+		\phxeqb{}{$x \geq -1$}{Find the intersection of the inequalities.}
+		\phxeqf{}{$x \in [-1, +\infty)$}{}
+	}
+
+\subsection{} \[3x^2 \leq 11x - 10\]
+	\phxproof{
+		\phxeqb{}{$3x^2 - 11x + 10 \leq 0$}{}
+		\phxeqs{}{$3x^2 - 5x - 6x + 10 \leq 0$}{Factor by grouping.}
+		\phxeqs{}{$(x - 2)(3x - 5) \leq 0$}{}
+		\phxeqs{}{$N_C \in \left\{\frac{5}{3}, 2\right\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{ /.8, $3x - 5$ /.8, $x - 2$ /.8, $(x - 2)(3x - 5)$ /.8}
+				{,$\frac{5}{3}$,$2$,}
+			\tkzTabLine {,-,t,+,t,+,}
+			\tkzTabLine {,-,t,-,t,+,}
+			\tkzTabLine {,+,t,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in \left[\frac{5}{3}, 2\right]$}{}
+	}
+
+\subsection{} \[(x + 3)(x - 4) \geq 3x\]
+	\phxproof{
+		\phxeqb{}{$x^2 - x - 12 \geq 3x$}{}
+		\phxeqs{}{$x^2 - 4x - 12 \geq 0$}{}
+		\phxeqs{}{$(x + 2)(x - 6) \geq 0$}{Factor by grouping.}
+		\phxeqs{}{$N_C \in \{-2, 6\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{ /.8, $x + 2$ /.8, $x - 6$ /.8, $(x + 2)(x - 6)$ /.8}
+				{,$-2$,$6$,}
+			\tkzTabLine {,-,t,+,t,+,}
+			\tkzTabLine {,-,t,-,t,+,}
+			\tkzTabLine {,+,t,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in (-\infty, -2] \cup [6, +\infty)$}{}
+	}
+
+\subsection{} \[x^3 + x \geq x^2 + 1\]
+	\phxproof{
+		\phxeqb{}{$x^3 - x^2 + x - 1 \geq 0$}{}
+		\phxeqs{}{$(x^2 + 1)(x - 1) \geq 0$}{Factor by grouping.}
+		\phxeqs{}{$N_C = 1$}{$x^2 + 1$ does not have a critical number.}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{ /.8, $x^2 + 1$ /.8, $x - 1$ /.8, $(x^2 + 1)(x - 1)$ /.8}
+				{,$1$,}
+			\tkzTabLine {,+,t,+,}
+			\tkzTabLine {,-,t,+,}
+			\tkzTabLine {,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in [1, +\infty)$}{}
+	}
+
+\subsection{} \[x^2 > 9\]
+	\phxproof{
+		\phxeqb{}{$x^2 - 9 > 0$}{}
+		\phxeqs{}{$(x - 3)(x + 3) > 0$}{Factor using difference of two squares.}
+		\phxeqs{}{$N_C \in \{-3, 3\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{ /.8, $x + 3$ /.8, $x - 3$ /.8, $(x + 3)(x - 3)$ /.8}
+				{,$-3$,$3$,}
+			\tkzTabLine {,-,t,+,t,+}
+			\tkzTabLine {,-,t,-,t,+}
+			\tkzTabLine {,+,t,-,t,+}
+		}{}
+		\phxeqf{}{$x \in (-\infty, -3) \cup (3, +\infty)$}{}
+	}
