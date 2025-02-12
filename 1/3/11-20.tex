@@ -1,0 +1,165 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\subsection{} \[4 - 3x - x^2 \geq 0\]
+	\phxproof{
+		\phxeqb{}{$x^2 + 3x - 4 \leq 0$}{}
+		\phxeqs{}{$(x + 4)(x - 1) \leq 0$}{Factor by grouping.}
+		\phxeqs{}{$N_C \in \{-4, 1\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{ /.8, $x + 4$ /.8, $x - 1$ /.8, $(x + 4)(x - 1)$ /.8}
+				{,$-4$,$1$,}
+			\tkzTabLine{,-,t,+,t,+}
+			\tkzTabLine{,-,t,-,t,+}
+			\tkzTabLine{,+,t,-,t,+}
+		}{}
+		\phxeqf{}{$x \in [-4, 1]$}{}
+	}
+
+\subsection{} \[4x^2 + 4x + 1 < 0\]
+	\phxproof{
+		\phxeqb{}{$4x^2 + 2x + 2x + 1 < 0$}{Factor by grouping.}
+		\phxeqs{}{${(2x + 1)}^2 < 0$}{}
+		\phxeqf{}{$x \in \emptyset$}{The square of a real number cannot be less than zero.}
+	}
+
+\subsection{} \[4x^2 + 4x > -1\]
+	\phxproof{
+		\phxeqb{}{$4x^2 + 4x + 1 > 0$}{}
+		\phxeqs{}{${(2x + 1)}^2 > 0$}{Factor by grouping.}
+		\phxeqf{}{$x \in \mathbb{R} \setminus \left\{-\frac{1}{2}\right\}$}{The square of a real number is always greater than or equal to zero. $x = -\frac{1}{2}$ is not included since then the inequality will become $0 > 0$.}
+	}
+
+\subsection{} \[x^2 - 2x < 2x - 3\]
+	\phxproof{
+		\phxeqb{}{$x^2 - 4x + 3 < 0$}{}
+		\phxeqs{}{$(x - 1)(x - 3) < 0$}{Factor by grouping.}
+		\phxeqs{}{$N_C \in \{1, 3\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{ /.8, $x - 1$ /.8, $x - 3$ /.8, $(x - 1)(x - 3)$ /.8}
+				{,$1$,$3$,}
+			\tkzTabLine{,-,t,+,t,+}
+			\tkzTabLine{,-,t,-,t,+}
+			\tkzTabLine{,+,t,-,t,+}
+		}{}
+		\phxeqf{}{$x \in (1, 3)$}{}
+	}
+
+\subsection{} \[(x + 4)(x^2 - 4) < 0\]
+	\phxproof{
+		\phxeqb{}{$(x + 4)(x + 2)(x - 2) < 0$}{Factor using difference of two squares.}
+		\phxeqs{}{$N_C \in \{-4, -2, 2\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 4, espcl = 1, deltacl = 0]
+				{ /.8, $x + 4$ /.8, $x + 2$ /.8, $x - 2$ /.8, $(x + 4)(x + 2)(x - 2)$ /.8}
+				{,$-4$,$-2$,$2$,}
+			\tkzTabLine{,-,t,+,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,-,t,+,}
+			\tkzTabLine{,-,t,+,t,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in (-\infty, -4) \cup (-2, 2)$}{}
+	}
+
+\subsection{} \[x - 2 \geq (x - 2)(2x^2 - x - 14)\]
+	\phxproof{
+		\phxeqb{}{$x - 2 \geq 2x^3 - x^2 - 14x - 4x^2 + 2x + 28$}{}
+		\phxeqs{}{$x - 2 \geq 2x^3 - 5x^2 - 12x + 28$}{}
+		\phxeqs{}{$2x^3 - 5x^2 - 13x + 30 \leq 0$}{}
+		\phxeqs{}{$p \in \{\pm 1, \pm 2, \pm 3, \pm 5, \pm 10, \pm 15, \pm 30\}$}{Factor using rational root theorem.}
+		\phxeqs{}{$q \in \{\pm 1, \pm 2\}$}{}
+		\phxeqs{}{$\frac{p}{q} \in \left\{\pm 1, \pm \frac{1}{2}, \pm 2, \pm 3, \pm \frac{3}{2}, \pm 5, \pm \frac{5}{2}, \pm 10, \pm 15, \pm \frac{15}{2}, \pm 30\right\}$}{}
+		\phxsdiv{}{1}{2x^3 - 5x^2 - 13x + 30}{}
+		\phxsdiv{}{-1}{2x^3 - 5x^2 - 13x + 30}{}
+		\phxsdiv{}{2}{2x^3 - 5x^2 - 13x + 30}{}
+		\phxeqs{}{$(x - 2)(2x^2 - x - 15) \leq 0$}{}
+		\phxeqs{}{$(x - 2)(2x^2 - 6x + 5x - 15) \leq 0$}{Factor by grouping.}
+		\phxeqs{}{$(x - 2)(2x + 5)(x - 3) \leq 0$}{}
+		\phxeqs{}{$N_C \in \left\{-\frac{5}{2}, 2, 3\right\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 4, espcl = 1, deltacl = 0]
+				{ /.8, $2x + 5$ /.8, $x - 2$ /.8, $x - 3$ /.8, $(x - 2)(2x + 5)(x - 3)$ /.8}
+				{,$-\frac{5}{2}$,$2$,$3$,}
+			\tkzTabLine{,-,t,+,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,-,t,+,}
+			\tkzTabLine{,-,t,+,t,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in \left(-\infty, -\frac{5}{2}\right] \cup [2, 3]$}{}
+	}
+
+\subsection{} \[x(2x^2 - 5x - 12) \geq 2x^2 - 5x - 12\]
+	\phxproof{
+		\phxeqb{}{$2x^3 - 5x^2 - 12x \geq 2x^2 - 5x - 12$}{}
+		\phxeqs{}{$2x^3 - 7x^2 - 7x + 12 \geq 0$}{}
+		\phxeqs{}{$p \in \{\pm 1, \pm 2, \pm 3, \pm 4, \pm 6, \pm 12\}$}{Factor using rational root theorem.}
+		\phxeqs{}{$q \in \{\pm 1, \pm 2\}$}{}
+		\phxeqs{}{$\frac{p}{q} \in \{\pm 1, \pm \frac{1}{2}, \pm 2, \pm 3, \pm \frac{3}{2}, \pm 4, \pm 6, \pm 12\}$}{}
+		\phxsdiv{}{1}{2x^3 - 7x^2 - 7x + 12}{}
+		\phxeqs{}{$(x - 1)(2x^2 - 5x - 12) \geq 0$}{}
+		\phxeqs{}{$(x - 1)(2x^2 - 8x + 3x - 12) \geq 0$}{Factor by grouping.}
+		\phxeqs{}{$(x - 1)(2x + 3)(x - 4) \geq 0$}{}
+		\phxeqs{}{$N_C \in \left\{-\frac{3}{2}, 1, 4\right\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 4, espcl = 1, deltacl = 0]
+				{ /.8, $2x + 3$ /.8, $x - 1$ /.8, $x - 4$ /.8, $(x - 1)(2x + 3)(x - 4)$ /.8}
+				{,$-\frac{3}{2}$,$1$,$4$,}
+			\tkzTabLine{,-,t,+,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,-,t,+,}
+			\tkzTabLine{,-,t,+,t,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in \left[-\frac{3}{2}, 1\right] \cup [4, +\infty)$}{}
+	}
+
+\subsection{} \[\frac{x}{x - 1} > -1\]
+	\phxproof{
+		\phxeqb{}{$\frac{x}{x - 1} + \frac{x - 1}{x - 1} > 0$}{}
+		\phxeqs{}{$\frac{2x - 1}{x - 1} > 0$}{}
+		\phxeqs{$x \neq 1$}{$N_C \in \left\{\frac{1}{2}, 1\right\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 2, espcl = 1, deltacl = 0]
+				{ /.8, $2x - 1$ /.8, $x - 1$ /.8, $\frac{2x - 1}{x - 1}$ /.8}
+				{,$\frac{1}{2}$,$1$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,t,-,z,+,}
+		}{}
+		\phxeqf{}{$x \in \left(-\infty, \frac{1}{2}\right) \cup (1, +\infty)$}{}
+	}
+
+\subsection{} \[\frac{x - 1}{2x + 5} \geq 0\]
+	\phxproof{
+		\phxeqb{$x \neq -\frac{5}{2}$}{$N_C \in \left\{-\frac{5}{2}, 1\right\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 2, espcl = 1, deltacl = 0]
+				{ /.8, $2x + 5$ /.8, $x - 1$ /.8, $\frac{x - 1}{2x + 5}$ /.8}
+				{,$-\frac{5}{2}$,$1$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,z,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in \left(-\infty, -\frac{5}{2}\right) \cup [1, +\infty)$}{}
+	}
+
+\subsection{} \[\frac{6 - 2x}{4 + x} > 5\]
+	\phxproof{
+		\phxeqb{}{$\frac{6 - 2x}{4 + x} - \frac{20 + 5x}{4 + x} > 0$}{}
+		\phxeqs{}{$\frac{-7x - 14}{4 + x} > 0$}{}
+		\phxeqs{}{$\frac{-x - 2}{4 + x} > 0$}{}
+		\phxeqs{}{$\frac{x + 2}{4 + x} < 0$}{}
+		\phxeqs{$x \neq -4$}{$N_C\in \{-4, -2\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 2, espcl = 1, deltacl = 0]
+				{ /.8, $4 + x$ /.8, $x + 2$ /.8, $\frac{x + 2}{4 + x}$ /.8}
+				{,$-4$,$-2$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,z,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in (-4, -2)$}{}
+	}

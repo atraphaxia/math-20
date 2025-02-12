@@ -10,6 +10,7 @@
 \usepackage[a4paper, margin = 2cm]{geometry}
 \usepackage{graphicx}
 \usepackage{mathtools}
+\usepackage{polynom}
 \usepackage{tabularray}
 \usepackage{tkz-tab}
 \usepackage{xpatch}
@@ -49,7 +50,7 @@
 
 
 \NewDocumentCommand{\phxproof}{m}{
-	\begin{longtblr}[expand = \phxeqb\phxeqs\phxeqf\phxsign]{colspec = {|llX[r]|}, rowsep = 4pt}
+	\begin{longtblr}[expand = \phxeqb\phxeqs\phxeqf\phxsign\phxsdiv]{colspec = {|llX[r]|}, rowsep = 4pt}
 		#1
 		& & $\blacksquare$ \\
 		\hline{}
@@ -66,10 +67,18 @@
 \newcommand{\phxsign}[3]
 {
 	#1&
-	\adjustbox{valign=t}{
+	\adjustbox{valign = t}{
 		\begin{tikzpicture}
 			#2
 		\end{tikzpicture}
 	}&
 	Create a table of signs. #3\\
+}
+
+\newcommand{\phxsdiv}[4]{
+	#1&
+	\adjustbox{valign = t}{
+		\polyhornerscheme[x = #2]{#3}
+	}&
+	Try $x$ = #2. #4\\
 }
