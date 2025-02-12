@@ -1,0 +1,152 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\subsection{} \[\frac{4}{2x - 1} < \frac{1}{x + 1}\]
+	\phxproof{
+		\phxeqb{}{$\frac{4}{2x - 1} - \frac{1}{x + 1} < 0$}{}
+		\phxeqs{}{$\frac{4x + 4}{(2x - 1)(x + 1)} - \frac{2x - 1}{(2x - 1)(x + 1)} < 0$}{$\lcm = (2x - 1)(x + 1)$.}
+		\phxeqs{}{$\frac{2x + 5}{(2x - 1)(x + 1)} < 0$}{}
+		\phxeqs{$x \notin \{-1, \frac{1}{2}\}$}{$N_C \in \{-\frac{5}{2}, -1, \frac{1}{2}\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $2x + 5$ /.8, $x + 1$ /.8, $2x - 1$ /.8, $\frac{2x + 5}{(2x - 1)(x + 1)}$ /.8}
+				{,$-\frac{5}{2}$,$-1$,$\frac{1}{2}$,}
+			\tkzTabLine{,-,t,+,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,-,t,+,}
+			\tkzTabLine{,-,t,+,z,-,z,+,}
+		}{}
+		\phxeqf{}{$x \in (-\infty, -\frac{5}{2}) \cup (-1, \frac{1}{2})$}{}
+	}
+
+\subsection{} \[\frac{6}{3w - 4} \ge w + 1\]
+	\phxproof{
+		\phxeqb{}{$\frac{6}{3w - 4} - \frac{(w + 1)(3w - 4)}{3w - 4} \ge 0$}{}
+		\phxeqs{}{$\frac{6}{3w - 4} - \frac{3w^2 - w - 4}{3w - 4} \ge 0$}{}
+		\phxeqs{}{$\frac{-3w^2 + w + 10}{3w - 4} \ge 0$}{}
+		\phxeqs{}{$\frac{3w^2 - w - 10}{3w - 4} \le 0$}{}
+		\phxeqs{}{$\frac{3w^2 - 6w + 5w - 10}{3w - 4} \le 0$}{Factor by grouping.}
+		\phxeqs{}{$\frac{(3w + 5)(w - 2)}{3w - 4} \le 0$}{}
+		\phxeqs{$x \ne \frac{4}{3}$}{$N_C \in \{-\frac{5}{3}, \frac{4}{3}, 2\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $3w + 5$ /.8, $3w - 4$ /.8, $w - 2$ /.8, $\frac{(3w + 5)(w - 2)}{3w - 4}$ /.8}
+				{,$-\frac{5}{3}$,$\frac{4}{3}$,$2$,}
+			\tkzTabLine{,-,t,+,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,-,t,+,}
+			\tkzTabLine{,-,t,+,z,-,t,+,}
+		}{}
+		\phxeqf{}{$x \in (-\infty, -\frac{5}{3}] \cup (\frac{4}{3}, 2]$}{}
+	}
+
+\subsection{} \[\frac{2x + 1}{4} \le \frac{2x}{3} + \frac{1}{6}\]
+	\phxproof{
+		\phxeqb{}{$12(\frac{2x + 1}{4}) \le 12(\frac{2x}{3} + \frac{1}{6})$}{$\lcm = 12$.}
+		\phxeqs{}{$6x + 3 \le 8x + 2$}{}
+		\phxeqs{}{$-2x \le -1$}{}
+		\phxeqs{}{$x \ge \frac{1}{2}$}{}
+		\phxeqf{}{$x \in [\frac{1}{2}, +\infty)$}{}
+	}
+
+\subsection{} \[\abs{x - 2} \ge 3\]
+	\phxproof{
+		\phxeqb{}{$x - 2 \ge 3$}{Solve positive case.}
+		\phxeqs{}{$x \ge 5$}{}
+		\phxeqb{}{$x - 2 \le -3$}{Solve negative case.}
+		\phxeqs{}{$x \le -1$}{}
+		\phxeqf{}{$x \in (-\infty, -1] \cup [5, +\infty)$}{Combine intervals.}
+	}
+
+\subsection{} \[\abs{3 - 2x} > 2\]
+	\phxproof{
+		\phxeqb{}{$3 - 2x > 2$}{Solve positive case.}
+		\phxeqs{}{$-2x > -1$}{}
+		\phxeqs{}{$x < \frac{1}{2}$}{}
+		\phxeqb{}{$3 - 2x < -2$}{Solve negative case.}
+		\phxeqs{}{$-2x < -5$}{}
+		\phxeqs{}{$x > \frac{5}{2}$}{}
+		\phxeqf{}{$x \in (-\infty, \frac{1}{2}) \cup (\frac{5}{2}, +\infty)$}{Combine intervals.}
+	}
+
+\subsection{} \[\abs{3 + 2x} + 8 \le 7\]
+	\phxproof{
+		\phxeqb{}{$\abs{3 + 2x} \le -1$}{}
+		\phxeqf{}{$x \in \emptyset$}{The absolute value of a real number cannot be negative.}
+	}
+
+\subsection{} \[\abs{3x - 1} + 2 \ge 1\]
+	\phxproof{
+		\phxeqb{}{$\abs{3x - 1} \ge -1$}{}
+		\phxeqb{}{$3x - 1 \ge -1$}{Solve positive case.}
+		\phxeqs{}{$3x \ge 0$}{}
+		\phxeqs{}{$x \ge 0$}{}
+		\phxeqb{}{$3x - 1 \le 1$}{Solve negative case.}
+		\phxeqs{}{$3x \le 2$}{}
+		\phxeqs{}{$x \le \frac{2}{3}$}{}
+		\phxeqf{}{$x \in \mathbb{R}$}{Combine intervals.}
+	}
+
+\subsection{} \[\abs{x^2 - 6x + 7} \ge 2\]
+	\phxproof{
+		\phxeqb{}{$x^2 - 6x + 7 \ge 2$}{Solve positive case.}
+		\phxeqs{}{$x^2 - 6x + 5 \ge 0$}{}
+		\phxeqs{}{$(x - 5)(x - 1) \ge 0$}{Factor by grouping.}
+		\phxeqs{}{$N_C \in \{1, 5\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $x - 1$ /.8, $x - 5$ /.8, $(x - 1)(x - 5)$ /.8}
+				{,$1$,$5$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,t,-,t,+,}
+		}{}
+		\phxeqs{}{$x \in (-\infty, 1] \cup [5, +\infty)$}{}
+		\phxeqb{}{$x^2 - 6x + 7 \le -2$}{Solve negative case.}
+		\phxeqs{}{$x^2 - 6x + 9 \le 0$}{}
+		\phxeqs{}{${(x - 3)}^2 \le 0$}{Factor by grouping.}
+		\phxeqs{}{$x = 3$}{The square of a real number cannot be negative.}
+		\phxeqf{}{$x \in (-\infty, 1] \cup \{3\} \cup [5, +\infty)$}{Combine intervals.}
+	}
+
+\subsection{} \[\abs{\frac{3x + 9}{2x - 2}} < -3\]
+	\phxproof{
+		\phxeqf{}{$x \in \emptyset$}{The absolute value of a real number cannot be negative.}
+	}
+
+\subsection{} \[\abs{\frac{4}{x} + 1} \ge 3\]
+	\phxproof{
+		\phxeqb{}{$\frac{4}{x} + 1 \ge 3$}{Solve positive case.}
+		\phxeqs{}{$\frac{4}{x} - 2 \ge 0$}{}
+		\phxeqs{}{$\frac{4}{x} - \frac{2x}{x} \ge 0$}{}
+		\phxeqs{}{$\frac{4 - 2x}{x} \ge 0$}{}
+		\phxeqs{}{$\frac{x - 2}{x} \le 0$}{}
+		\phxeqs{$x \ne 0$}{$N_C \in \{0, 2\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $x$ /.8, $x - 2$ /.8, $\frac{x - 2}{x}$ /.8}
+				{,$0$,$2$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,z,-,t,+,}
+		}{}
+		\phxeqs{}{$x \in (0, 2]$}{}
+		\phxeqb{}{$\frac{4}{x} + 1 \le -3$}{Solve negative case.}
+		\phxeqs{}{$\frac{4}{x} + 4 \le 0$}{}
+		\phxeqs{}{$\frac{4}{x} + \frac{4x}{4} \le 0$}{}
+		\phxeqs{}{$\frac{4x + 4}{x} \le 0$}{}
+		\phxeqs{}{$\frac{x + 1}{x} \le 0$}{}
+		\phxeqs{$x \ne 0$}{$N_C \in \{-1, 0\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $x + 1$ /.8, $x$ /.8, $\frac{x + 1}{x}$ /.8}
+				{,$-1$,$0$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,t,-,z,+,}
+		}{}
+		\phxeqs{}{$x \in [-1, 0)$}{}
+		\phxeqf{}{$x \in [-1, 0) \cup (0, 2]$}{Combine intervals.}
+	}
