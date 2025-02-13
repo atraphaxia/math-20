@@ -1,0 +1,101 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\subsection{} \[\abs{\frac{x}{2x - 3}} \le 1\]
+	\phxproof{
+		\phxeqb{}{$\frac{x}{2x - 3} \le 1$}{Solve positive case.}
+		\phxeqs{}{$\frac{x}{2x - 3} - \frac{2x - 3}{2x - 3} \le 0$}{}
+		\phxeqs{}{$\frac{-x + 3}{2x - 3} \le 0$}{}
+		\phxeqs{}{$\frac{x - 3}{2x - 3} \ge 0$}{}
+		\phxeqs{$x \ne \frac{3}{2}$}{$N_C \in \{\frac{3}{2}, 3\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $2x - 3$ /.8, $x - 3$ /.8, $\frac{x - 3}{2x - 3}$ /.8}
+				{,$\frac{3}{2}$,$3$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,z,-,t,+,}
+		}{}
+		\phxeqs{}{$x \in (-\infty, \frac{3}{2}) \cup  [3, +\infty)$}{}
+		\phxeqb{}{$\frac{x}{2x - 3} \ge -1$}{Solve negative case.}
+		\phxeqs{}{$\frac{x}{2x - 3} + \frac{2x - 3}{2x - 3} \ge 0$}{}
+		\phxeqs{}{$\frac{3x - 3}{2x - 3} \ge 0$}{}
+		\phxeqs{}{$\frac{x - 1}{2x - 3} \ge 0$}{}
+		\phxeqs{$x \ne \frac{3}{2}$}{$N_C \in \{1, \frac{3}{2}\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $x - 1$ /.8, $2x - 3$ /.8, $\frac{x - 1}{2x - 3}$ /.8}
+				{,$1$,$\frac{3}{2}$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,t,-,z,+,}
+		}{}
+		\phxeqs{}{$x \in (-\infty, 1] \cup (\frac{3}{2}, +\infty)$}{}
+		\phxeqf{}{$x \in (-\infty, 1] \cup [3, +\infty)$}{Intersect intervals.}
+	}
+
+\subsection{} \[0 < \abs{x - 5} < 2\]
+	\phxproof{
+		\phxeqb{}{$\abs{x - 5} > 0$}{Solve left inequality.}
+		\phxeqs{}{$x - 5 > 0$}{Solve positive case.}
+		\phxeqs{}{$x > 5$}{}
+		\phxeqs{}{$x - 5 < 0$}{Solve negative case.}
+		\phxeqs{}{$x < 5$}{}
+		\phxeqs{}{$x \in (-\infty, 5) \cup (5, +\infty)$}{Combine intervals.}
+		\phxeqb{}{$\abs{x - 5} < 2$}{Solve right inequality.}
+		\phxeqs{}{$x - 5 < 2$}{Solve positive case.}
+		\phxeqs{}{$x < 7$}{}
+		\phxeqs{}{$x - 5 > -2$}{Solve negative case.}
+		\phxeqs{}{$x > 3$}{}
+		\phxeqs{}{$x \in (3, 7)$}{Intersect intervals.}
+		\phxeqf{}{$x \in (3, 5) \cup (5, 7)$}{Intersect intervals.}
+	}
+
+\subsection{} \[3\abs{8 - x} + 2 < 7 - 2\abs{x - 8}\]
+	\phxproof{
+		\phxeqb{$x < 8$}{$3(8 - x) + 2 < 7 - 2(8 - x)$}{Solve case where $x < 8$.}
+		\phxeqs{$x < 8$}{$24 - 3x + 2 < 7 - 16 + 2x$}{}
+		\phxeqs{$x < 8$}{$5x > 35$}{}
+		\phxeqs{$x < 8$}{$x > 7$}{}
+		\phxeqs{}{$x \in (7, 8)$}{}
+		\phxeqb{$x \ge 8$}{$3(x - 8) + 2 < 7 - 2(x - 8)$}{Solve case where $x \ge 8$.}
+		\phxeqs{$x \ge 8$}{$3x - 24 + 2 < 7 - 2x + 16$}{}
+		\phxeqs{$x \ge 8$}{$5x < 45$}{}
+		\phxeqs{$x \ge 8$}{$x < 9$}{}
+		\phxeqs{}{$x \in [8, 9)$}{}
+		\phxeqf{}{$x \in (7, 9)$}{Combine intervals.}
+	}
+
+\subsection{} \[\abs{\frac{9 - 2x}{4x}} \ge 1\]
+	\phxproof{
+		\phxeqb{}{$\frac{9 - 2x}{4x} \ge 1$}{Solve positive case.}
+		\phxeqs{}{$\frac{9 - 2x}{4x} - \frac{4x}{4x} \ge 0$}{}
+		\phxeqs{}{$\frac{9 - 6x}{4x} \ge 0$}{}
+		\phxeqs{}{$\frac{3 - 2x}{4x} \ge 0$}{}
+		\phxeqs{$x \ne 0$}{$N_C \in \{0, \frac{3}{2}\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $4x$ /.8, $3 - 2x$ /.8, $\frac{3 - 2x}{4x}$ /.8}
+				{,$0$,$\frac{3}{2}$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,+,t,+,t,-,}
+			\tkzTabLine{,-,z,+,t,-,}
+		}{}
+		\phxeqs{}{$x \in (0, \frac{3}{2}]$}{}
+		\phxeqb{}{$\frac{9 - 2x}{4x} \le -1$}{Solve negative case.}
+		\phxeqs{}{$\frac{9 - 2x}{4x} + \frac{4x}{4x} \le 0$}{}
+		\phxeqs{}{$\frac{2x + 9}{4x} \le 0$}{}
+		\phxeqs{$x \ne 0$}{$N_C \in \{-\frac{9}{2}, 0\}$}{}
+		\phxsign{}{
+			\tkzTabInit[lgt = 3, espcl = 1, deltacl = 0]
+				{/.8, $2x + 9$ /.8, $4x$ /.8, $\frac{2x + 9}{4x}$ /.8}
+				{,$-\frac{9}{2}$,$0$,}
+			\tkzTabLine{,-,t,+,t,+,}
+			\tkzTabLine{,-,t,-,t,+,}
+			\tkzTabLine{,+,t,-,z,+,}
+		}{}
+		\phxeqs{}{$x \in [-\frac{9}{2}, 0)$}{}
+		\phxeqf{}{$x \in [-\frac{9}{2}, 0) \cup (0, \frac{3}{2}]$}{}
+	}
