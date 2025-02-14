@@ -1,0 +1,133 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\section{} Solve the following word problems algebraically.
+
+\subsection{} Find 3 consecutive even numbers whose sum is 78.
+	\phxproof{
+		\phxeqb{}{$x + (x + 2) + (x + 4) = 78$}{}
+		\phxeqs{}{$3x + 6 = 78$}{}
+		\phxeqs{}{$3x = 72$}{}
+		\phxeqs{}{$x = 24$}{}
+		\phxeqf{}{The 3 consecutive even numbers are 24, 26, and 28.}{}
+	}
+
+\subsection{} If the length of each side of a square is increased by 2 units, the
+	resulting square has an area that is 16 units more than the area of the original
+	square. Determine the dimensions of the original square.
+	\phxproof{
+		\phxeqb{}{${(x + 2)}^2 = x^2 + 16$}{The original square has a side length of $x$.}
+		\phxeqs{}{$x^2 + 4x + 4 = x^2 + 16$}{}
+		\phxeqs{}{$4x = 12$}{}
+		\phxeqs{}{$x = 3$}{}
+		\phxeqf{}{The original square has a side length of 3 units.}{}
+	}
+
+\subsection{} Susan is 9 years older than Ivy. Four years ago, the sum of their ages
+	was 17 years. In how many years will Susan turn 18?
+	\phxproof{
+		\phxeqb{}{$(I - 4) + ((I + 9) - 4) = 17$}{}
+		\phxeqs{}{$2I + 1 = 17$}{}
+		\phxeqs{}{$2I = 16$}{}
+		\phxeqs{}{$I = 8$}{}
+		\phxeqs{}{$S = 17$}{$S = I + 9$}
+		\phxeqf{}{Susan will turn 18 in 1 year.}{}
+	}
+
+\subsection{} Ray and Joyce leave a park at the same time in separate directions. Ray
+	drives 6 kilometeres home while Joyce drives 7 kilometers home. They arrive at the
+	same time at their respective homes. If Ray drives 3 kilometers per hour slower
+	than Joyce, what are their average rates?
+	\phxproof{
+		\phxeqb{}{$\frac{6}{r - 3} = \frac{7}{r}$}{}
+		\phxeqs{}{$r(r - 3)(\frac{6}{r - 3}) = r(r - 3)(\frac{7}{r})$}{$\lcm = r(r - 3)$.}
+		\phxeqs{}{$6r = 7r - 21$}{}
+		\phxeqs{}{$r_J = 21$}{}
+		\phxeqs{}{$r_R = 18$}{}
+		\phxeqs{}{Ray drives at a speed of \qty{18}{\unit{km/h}}, while Joyce drives at a speed of \qty{21}{\unit{km/h}}.}{}
+	}
+
+\subsection{} To exclusively rent a videoke room, a certain number of people have to
+	pay equal amounts to a total of Php $720.00$. If there were 3 persons less, each
+	person would then have to contribute Php $40.00$ more. How many people were there
+	originally?
+	\phxproof{
+		\phxeqb{}{$\frac{720}{x} + 40 = \frac{720}{x - 3}$}{}
+		\phxeqs{}{$x(x - 3)(\frac{720}{x} + 40) = x(x - 3)(\frac{720}{x - 3})$}{$\lcm = x(x - 3)$.}
+		\phxeqs{}{$720x - 2160 + 40x(x - 3) = 720x$}{}
+		\phxeqs{}{$\cancel{720x} - 2160 + 40x^2 - 120x = \cancel{720x}$}{}
+		\phxeqs{}{$40x^2 - 120x - 2160 = 0$}{}
+		\phxeqs{}{$x^2 - 3x - 54 = 0$}{}
+		\phxeqs{}{$(x - 9)(x + 6) = 0$}{Factor by grouping.}
+		\phxeqs{}{$x \in \{-6, 9\}$}{}
+		\phxeqs{}{$x = 9$}{The number of people cannot be negative.}
+		\phxeqf{}{9 people were there there originally.}{}
+	}
+
+\subsection{} The numerator of a positive fraction is 5 more than thrice its denominator.
+	If 13 is added to the denominator and 9 is subtracted from the numerator, the resulting
+	fraction is twice the reciprocal of the original number. Find the original fraction.
+	\phxproof{
+		\phxeqb{}{$2(\frac{x}{3x + 5}) = \frac{3x - 4}{x + 13}$}{}
+		\phxeqs{}{$\frac{2x}{3x + 5} = \frac{3x - 4}{x + 13}$}{}
+		\phxeqs{}{$(3x + 5)(x + 13)(\frac{2x}{3x + 5}) = (3x + 5)(x + 13)(\frac{3x - 4}{x + 13})$}{$\lcm = (3x + 5)(x + 13)$.}
+		\phxeqs{}{$2x(x + 13) = (3x + 5)(3x - 4)$}{}
+		\phxeqs{}{$2x^2 + 26x = 9x^2 + 3x - 20$}{}
+		\phxeqs{}{$7x^2 - 23x - 20 = 0$}{}
+		\phxeqs{}{$x = \frac{-(-23) \pm \sqrt{{(-23)}^2 - 4(7)(-20)}}{2(7)}$}{Use the quadratic formula.}
+		\phxeqs{}{$x = \frac{23 \pm \sqrt{529 + 560}}{14}$}{}
+		\phxeqs{}{$x = \frac{23 \pm \sqrt{1089}}{14}$}{}
+		\phxeqs{}{$x = \frac{23 \pm \sqrt{9}\sqrt{121}}{14}$}{}
+		\phxeqs{}{$x = \frac{23 \pm 33}{14}$}{}
+		\phxeqs{}{$x \in \{\frac{23 + 33}{14}, \frac{23 - 33}{14}\}$}{}
+		\phxeqs{}{$x \in \{\frac{56}{14}, -\frac{10}{14}\}$}{}
+		\phxeqs{}{$x \in \{4, -\frac{5}{7}\}$}{}
+		\phxeqs{}{$x = 4$}{We want a positive fraction.}
+		\phxeqf{}{The original fraction is $\frac{17}{4}$.}{}
+	}
+
+\subsection{} Two friends living 39 miles apart leave their homes at the same time on
+	bicycles and travel towards each other. If one person averages 2 miles per hour more
+	then the other and they meet in $\frac{3}{2}$ hours, what is each person's average
+	cycling speed?
+	\phxproof{
+		\phxeqb{}{$\frac{3}{2}x + \frac{3}{2}(x + 2) = 39$}{}
+		\phxeqs{}{$3x + 3x + 6 = 78$}{}
+		\phxeqs{}{$6x = 72$}{}
+		\phxeqs{}{$x = 12$}{}
+		\phxeqf{}{The slower person has a speed of \qty{12}{\unit{mph}}, while the faster person has a speed of \qty{14}{\unit{mph}}.}{}
+	}
+
+\subsection{}  Bus A leaves a terminal at 12:00 noon while Bus B headed for the same destination
+	leaves at the same terminal 15 minutes later. After covering 75 kilometers, Bus B catches up
+	to Bus A at 1:15 pm. Determine the speed of each bus.
+	\phxproof{
+		\phxeqb{}{$t_A = \qty{75}{\minute} = \frac{5}{4}\unit{\hour}$}{}
+		\phxeqs{}{$\frac{5}{4}x = 75$}{}
+		\phxeqs{}{$\frac{5x}{4} = 75$}{}
+		\phxeqs{}{$5x = 300$}{}
+		\phxeqs{}{$x = 60$}{}
+		\phxeqf{}{Bus A travels at \qty{60}{\unit{km/h}}, while Bus B travels at \qty{75}{\unit{km/h}}.}{}
+	}
+
+\subsection{} One alloy contains 80\% gold (by weight) and another contains 55\% gold. How many grams of
+	each alloy must be combined to make 40 grams of an alloy that is 70\% gold?
+	\phxproof{
+		\phxeqb{}{$0.8x + 0.55(40 - x) = 0.7(40)$}{}
+		\phxeqs{}{$0.8x + 22 - 0.55x = 28$}{}
+		\phxeqs{}{$0.25x - 6$}{}
+		\phxeqs{}{$x = 24$}{}
+		\phxeqf{}{\qty{24}{\gram} and \qty{16}{\gram} of the 80\% and 55\% gold alloys, respectively, are needed.}{}
+	}
+
+\subsection{} One acid soluton is 60\% water and another acid solution is 40\% water. How many liters of each
+	solution should be mixed to produce 90 liters of acid solution which is 50\% water?
+	\phxproof{
+		\phxeqb{}{$0.6x + 0.4(90 - x) = 0.52(90)$}{}
+		\phxeqs{}{$0.6x + 36 - 0.4x = 46.8$}{}
+		\phxeqs{}{$0.2x = 10.8$}{}
+		\phxeqs{}{$x = 54$}{}
+		\phxeqf{}{\qty{54}{\liter} and \qty{36}{\liter} of the acid solutions with 60\% and 40\% water, respectively, are needed.}{}
+	}
