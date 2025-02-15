@@ -25,3 +25,72 @@
 		\phxeqs{}{$x = 70000$}{}
 		\phxeqf{}{\makecell[l]{Php $70,000.00$ and Php $50,000.00$ are invested in the 7\% and 5\% annual interest\\accounts, respectively.}}{}
 	}
+
+\subsection{} If a rowing team rows with the current, they can cover $16$ miles in 2 hours.
+	Against the current, they can cover 10 miles in 4 hours. Find their rate of rowing in calm
+	water and the rate of the current.
+	\phxproof{
+		\phxeqb{}{$\frac{16}{2} - \frac{10}{4} = (r + c) - (r - c)$}{Find the speed of the current.}
+		\phxeqs{}{$\frac{32}{4} - \frac{10}{4} = r + c - r + c$}{}
+		\phxeqs{}{$\frac{22}{4} = 2c$}{}
+		\phxeqs{}{$c = \frac{11}{4}$}{}
+		\phxeqb{}{$r + \frac{11}{4} = \frac{16}{2}$}{Find the speed of the rowing team in calm water.}
+		\phxeqs{}{$r = \frac{32}{4} - \frac{11}{4}$}{}
+		\phxeqs{}{$r = \frac{21}{4}$}{}
+		\phxeqf{}{\makecell[l]{The rowing team has a speed of $\frac{21}{4} \unit{mph}$ in calm water, while the current\\has a speed of $\frac{11}{4} \unit{mph}$.}}{}
+	}
+
+\subsection{} Mary can clean an office in 10 hours. Working together, John and Mary can clean the
+	office in 7 hours. How long would it take John to clean the office by himself?
+	\phxproof{
+		\phxeqb{}{$\frac{1}{10} + \frac{1}{x} = \frac{1}{7}$}{}
+		\phxeqs{}{$70x(\frac{1}{10} + \frac{1}{x}) = 70x(\frac{1}{7})$}{$\lcm = 70x$.}
+		\phxeqs{}{$7x + 70 = 10x$}{}
+		\phxeqs{}{$3x = 70$}{}
+		\phxeqs{}{$x = \frac{70}{3}$}{}
+		\phxeqf{}{John will take $\frac{70}{3} \unit{\hour}$ to clean the office alone.}{}
+	}
+
+\subsection{} An office has two photocopy machines. Machine A can photocopy 1000 pieces of a single
+	file in 5 hours, while Machine B can photocopy 1000 pieces of the same file in 4 hours. How long
+	will it take the two machines, both working together to photocopy 1600 pieces of a file?
+	\phxproof{
+		\phxeqb{}{$\frac{1000}{5} + \frac{1000}{4} = \frac{1600}{x}$}{}
+		\phxeqs{}{$20x(\frac{1000}{5} + \frac{1000}{4}) = 20x(\frac{1600}{x})$}{$\lcm = 20x$.}
+		\phxeqs{}{$4000x + 5000x = 32000$}{}
+		\phxeqs{}{$9000x = 32000$}{}
+		\phxeqs{}{$x = \frac{32000}{9000}$}{}
+		\phxeqs{}{$x = \frac{32}{9}$}{}
+		\phxeqf{}{Both machines working together will take $\frac{32}{9} \unit{\hour}$ to make 1600 copies of a file.}{}
+	}
+
+\subsection{} A man can paint a room by himself in 8 hours while his son can paint the same room in
+	12 hours. The man works by himself for 3 hours and is then joined by his son. How many hours will
+	it take them to finish painting?
+	\phxproof{
+		\phxeqb{}{$u = 1 - 3\frac{1}{8}$}{Find the unpainted amount of room.}
+		\phxeqs{}{$u = \frac{5}{8}$}{}
+		\phxeqb{}{$\frac{1}{8} + \frac{1}{12} = \frac{5}{8x}$}{}
+		\phxeqs{}{$24x(\frac{1}{8} + \frac{1}{12}) = 24x(\frac{5}{8x})$}{$\lcm = 24x$.}
+		\phxeqs{}{$3x + 2x = 15$}{}
+		\phxeqs{}{$5x = 15$}{}
+		\phxeqs{}{$x = 3$}{}
+		\phxeqf{}{Both of them will take \qty{3}{\hour} to paint the still-unpainted part of the room.}{}
+	}
+
+\subsection{} A woman can do a certain job in 8 hours, while her daughter can do it in 12 hours. After
+	the woman and the daughter worked for an hour, they were joined by the woman's son, and the three
+	completed the job in three hours. How long would it take the son to finish the same job alone?
+	\phxproof{
+		\phxeqb{}{$u = 1 - \frac{1}{8} - \frac{1}{12}$}{Find the uncompleted part of the job.}
+		\phxeqs{}{$u = \frac{24}{24} - \frac{3}{24} - \frac{2}{24}$}{}
+		\phxeqs{}{$u = \frac{19}{24}$}{}
+		\phxeqb{}{$\frac{1}{8} + \frac{1}{12} + \frac{1}{x} = \frac{19}{24(3)}$}{}
+		\phxeqs{}{$\frac{1}{8} + \frac{1}{12} + \frac{1}{x} = \frac{19}{72}$}{}
+		\phxeqs{}{$72x(\frac{1}{8} + \frac{1}{12} + \frac{1}{x}) = 72x(\frac{19}{72})$}{$\lcm = 72x$.}
+		\phxeqs{}{$9x + 6x + 72 = 19x$}{}
+		\phxeqs{}{$15x + 72 = 19x$}{}
+		\phxeqs{}{$4x = 72$}{}
+		\phxeqs{}{$x = 18$}{}
+		\phxeqf{}{Her son will take \qty{18}{\hour} to do the job alone.}{}
+	}
