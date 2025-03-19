@@ -11,6 +11,8 @@
 \usepackage{amssymb}
 \usepackage[a4paper, margin = 2cm]{geometry}
 \usepackage{mathtools}
+\usepackage{tkz-tab}
+\usepackage{xpatch}
 
 
 
@@ -18,6 +20,9 @@
 \makeatletter
 \let\oldabs\abs
 \def\abs{\@ifstar{\oldabs}{\oldabs*}}
+
+\xpatchcmd{\tkzTabLine}{$0$}{$\bullet$}{}{}
+\tikzset{t style/.style = {style = solid}}
 
 
 
@@ -29,7 +34,7 @@
 \author{Nile Jocson \textless{}atraphaxia@gmail.com\textgreater{}}
 
 
-\includeonly{section/2}
+\includeonly{section/3}
 \begin{document}
 	\maketitle{}
 		\pagebreak{}
@@ -39,4 +44,5 @@
 
 	\include{section/1}
 	\include{section/2}
+	\include{section/3}
 \end{document}
