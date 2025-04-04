@@ -1,0 +1,3 @@
+[submodule "asoln"]
+	path = asoln
+	url = https://github.com/atraphaxia/asoln.git
