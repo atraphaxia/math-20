@@ -1,0 +1,137 @@
+% SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
+% SPDX-License-Identifier: MPL-2.0
+
+
+
+\section{Notes}
+
+\anotegroup{Fractions}{%
+	\anote{Addition and Subtraction}{fas}{%
+		Let $L$ be the LCD of the fractions.
+		\[\dfrac{a}{b} \pm \dfrac{c}{d} = \dfrac{a\ab(\dfrac{L}{b}) \pm c\ab(\dfrac{L}{d})}{L}\]
+	}
+	\anote{Multiplication}{fm}{
+		\[\dfrac{a}{b} \cdot \dfrac{c}{d} = \dfrac{ac}{bd}\]
+	}
+	\anote{Division}{fd}{
+		\[\dfrac{a}{b} \div \dfrac{c}{d} = \dfrac{a}{b} \cdot \dfrac{d}{c} = \dfrac{ad}{bc}\]
+		If both fractions have the same denominator:
+		\[\dfrac{a}{b} \div \dfrac{c}{b} = \dfrac{a}{b} \cdot \dfrac{b}{c} = \dfrac{ab}{bc} = \dfrac{a}{c}\]
+	}
+}
+
+\anotegroup{Exponents}{
+	\anote{Negative Exponents}{ene}{
+		\[a^{-n} = \dfrac{1}{a^n}\]
+	}
+	\anote{Multiplication}{em}{
+		\[a^n a^m = a^{n + m}\]
+	}
+	\anote{Division}{ed}{
+		\[\dfrac{a^n}{a^m} = a^{n - m}\]
+	}
+	\anote{Of Products}{eopr}{
+		\[{(ab)}^n = a^n b^n\]
+	}
+	\anote{Of Quotients}{eoq}{
+		\[{\ab(\dfrac{a}{b})}^n = \dfrac{a^n}{b^n}\]
+	}
+	\anote{Of Powers}{eopw}{
+		\[{(a^n)}^m = a^{nm}\]
+	}
+}
+
+\anotegroup{Factoring}{
+	\anote{Common Monomial Factor}{fcmf}{
+		\[ax \pm ay = a(x \pm y)\]
+	}
+	\anote{Difference of Two Squares}{fdts}{
+		\[x^2 - y^2 = (x - y)(x + y)\]
+	}
+	\anote{Perfect Square Trinomial}{fpst}{
+		\[x^2 \pm 2xy + y^2 = {(x \pm y)}^2\]
+	}
+	\anote{Sum and Difference of Two Cubes}{fsdtc}{
+		\[x^3 \pm y^3 = (x \pm y)(x^2 \mp xy + y^2)\]
+	}
+	\anote{Simple Trinomial}{fst}{
+		\[x^2 + (a + b)x + ab = (x + a)(x + b)\]
+	}
+	\anote{Complex Trinomial}{fct}{
+		\[acx^2 + (ad + bc)x + bd = (ax + b)(cx + d)\]
+	}
+}
+
+\anotegroup{Radicals}{
+	\anote{Exponent Form}{ref}{
+		\[\sqrt[n]{a^m} = a^\frac{m}{n}\]
+	}
+	\anote{Of Products}{rop}{
+		\[\sqrt[n]{ab} = \sqrt[n]{a}\sqrt[n]{b}\]
+	}
+	\anote{Of Quotients}{roq}{
+		\[\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}\]
+	}
+	\anote{Nesting}{rn}{
+		\[\sqrt[n]{\sqrt[m]{a}} = \sqrt[nm]{a}\]
+	}
+	\anote{Rationalization}{rr}{%
+		A rational expression must not have a radical at its denominator. Multiply the numerator and denominator by an expression that would eliminate the radical; this
+		may be a special product. A simple example:
+		\begin{align*}
+			\sqrt[3]{\dfrac{10y^4}{3x^2}}
+			&= \dfrac{\sqrt[3]{10y^4}}{\sqrt[3]{3x^2}} \\
+			&= \dfrac{\sqrt[3]{10y^4}}{\sqrt[3]{3x^2}} \cdot \dfrac{\sqrt[3]{9x}}{\sqrt[3]{3^2x}} \\
+			&= \dfrac{\sqrt[3]{90xy^4}}{\sqrt[3]{3^3x^3}} \\
+			&= \dfrac{\sqrt[3]{y^3}\sqrt[3]{90xy}}{3x} \\
+			\Aboxed{{} &= \dfrac{y\sqrt[3]{90xy}}{3x}}
+		\end{align*}
+		A more complex example using \aref{fsdtc}:
+		\begin{align*}
+			\dfrac{1}{2 - \sqrt[3]{4}}
+			&= \dfrac{1}{2 - \sqrt[3]{4}} \cdot \dfrac{4 + 2\sqrt[3]{4} + \sqrt[3]{16}}{4 + 2\sqrt[3]{4} + \sqrt[3]{4^2}} \\
+			&= \dfrac{4 + 2\sqrt[3]{4} + \sqrt[3]{8}\sqrt[3]{2}}{2^3 - \sqrt[3]{4^3}} \\
+			&= \dfrac{4 + 2\sqrt[3]{4} + 2\sqrt[3]{2}}{8 - 4} \\
+			&= \dfrac{4 + 2\sqrt[3]{4} + 2\sqrt[3]{2}}{4} \\
+			\Aboxed{{} &= 1 + \dfrac{\sqrt[3]{4} + \sqrt[3]{2}}{2}} \\
+		\end{align*}
+	}
+}
+
+\anotegroup{Imaginary Numbers}{
+	\anote{Definition}{ind}{
+		\[i = \sqrt{-1}\]
+	}
+	\anote{Cyclicity}{inc}{%
+		We have:
+		\begin{align*}
+			i^0 &= 1 \\
+			i^1 &= i \\
+			i^2 &= -1 \\
+			i^3 &= -i
+		\end{align*}
+		This is cyclic:
+		\[i^n = i^{n \bmod 4}\]
+	}
+}
+
+\anotegroup{Complex Numbers}{
+	\anote{Definition}{cnd}{%
+		A complex number in rectangular form is given by:
+		\[a + bi\]
+	}
+	\anote{Addition}{cna}{
+		\[(a + bi) + (c + di) = (a + c) + (b + d)i\]
+	}
+	\anote{Multiplication}{cnm}{
+		\[(a + bi)(c + di) = (ac - bd) + (ad + bc)i\]
+	}
+	\anote{Conjucate}{cnc}{
+		\[\overline{a + bi} = a - bi\]
+		Also,
+		\[(a + bi)(\overline{a + bi}) = a^2 + b^2\]
+	}
+	\anote{Division}{cndv}{
+		\[\dfrac{a + bi}{c + di} = \dfrac{a + bi}{c + di} \cdot \dfrac{\overline{c + di}}{\overline{c + di}} = \dfrac{ac + bd}{c^2 + d^2} + \dfrac{bc - ad}{c^2 + d^2}i\]
+	}
+}
