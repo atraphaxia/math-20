@@ -10,68 +10,123 @@ Simplify the following.
 \aproblem{
 	\[\dfrac{7^{-3}}{7^{-16}}\]
 }{
-	&=
+	\intertext{\aref*{ed}}
+	&= 7^{-3 + 16}
+	\afinal{$= 7^{13}$}
 }
 
 \subsection{}
 \aproblem{
-	\[\dfrac{3^2 - 9^{-1} - 9^0}{2^4 - 3^{-1}}\]
+	\[\dfrac{3^2 + 9^{-1} - 9^0}{2^4 - 3^{-1}}\]
 }{
-	&=
+	&= \ab(9 + \dfrac{1}{9} - 1) \div \ab(16 - \dfrac{1}{3})
+	\intertext{\aref*{fas, fd}}
+	&= \dfrac{81 + 1 - 9}{9} \cdot \dfrac{3}{48 - 1} \\
+	&= \dfrac{73}{3} \cdot \dfrac{1}{47}
+	\intertext{\aref*{fm}}
+	\afinal{$= \dfrac{73}{141}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{8x^6y^3z^4}{2x^5yz^2}\]
 }{
-	&=
+	\intertext{\aref*{ed}}
+	&= 4x^{6 - 5}y^{3 - 1}z^{4 - 2}
+	\afinal{$= 4xy^2z^2$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{3x^{21}y^{12}z^{19}}{(-x^{-9}y^3z^{-3})(-9x^4y^6z^6)}\]
 }{
-	&=
+	\intertext{\aref*{em}}
+	&= \dfrac{3x^{21}y^{12}z^{19}}{9x^{-9 + 4}y^{3 + 6}z^{-3 + 6}} \\
+	&= \dfrac{3x^{21}y^{12}z^{19}}{9x^{-5}y^9z^3}
+	\intertext{\aref*{ed}}
+	&= \dfrac{1}{3}x^{21 + 5}y^{12 - 9}z^{19 - 3}
+	\afinal{$= \dfrac{1}{3}x^{26}y^3z^{16}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{2{(x^3yz^2)}^2}{{(2x^2y^2z)}^3}\]
 }{
-	&=
+	\intertext{\aref*{eop, en}}
+	&= \dfrac{2x^6y^2z^4}{8x^6y^6z^3}
+	\intertext{\aref*{ed}}
+	&= \dfrac{1}{4}x^{6 - 6}y^{2 - 6}z^{4 - 3} \\
+	&= \dfrac{1}{4}y^{-4}z
+	\intertext{\aref*{ene}}
+	\afinal{$= \dfrac{z}{4y^4}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{{(2a^3b^{-3}c^{-2})}^3}{{(a^3b^2c^{-1})}^{-2}}\]
 }{
-	&=
+	\intertext{\aref*{eop, en}}
+	&= \dfrac{8a^9b^{-9}c^{-6}}{a^{-6}b^{-4}c^2}
+	\intertext{\aref*{ed}}
+	&= 8a^{9 + 6}b^{-9 + 4}c^{-6 - 2} \\
+	&= 8a^{15}b^{-5}c^{-8}
+	\intertext{\aref*{ene}}
+	\afinal{$= \dfrac{8a^{15}}{b^5c^8}$}
 }
 
 \subsection{}
 \aproblem{
 	\[{\ab(\dfrac{2a^3b^{-3}c^{-1}}{3a^{-2}b^{-2}c^3})}^3\]
 }{
-	&=
+	\intertext{\aref*{ed}}
+	&= {\ab(\dfrac{2}{3}a^{3 + 2}b^{-3 + 2}c^{-1 - 3})}^3 \\
+	&= {\ab(\dfrac{2}{3}a^{5}b^{-1}c^{-4})}^3
+	\intertext{\aref*{eop, eoq, en}}
+	&= \dfrac{8}{27}a^{15}b^{-3}c^{-12}
+	\intertext{\aref*{ene}}
+	\afinal{$= \dfrac{8a^{15}}{27b^3c^{12}}$}
 }
 
 \subsection{}
 \aproblem{
 	\[{\ab(\dfrac{a^2b^3c^{-1}}{ab^{-2}c^5})}^4\]
 }{
-	&=
+	\intertext{\aref*{ed}}
+	&= {(a^{2 - 1}b^{3 + 2}c^{-1 - 5})}^4 \\
+	&= {(ab^5c^{-6})}^4
+	\intertext{\aref*{eop, en}}
+	&= a^4b^{20}c^{-24}
+	\intertext{\aref*{ene}}
+	\afinal{$= \dfrac{a^4b^{20}}{c^{24}}$}
 }
 
 \subsection{}
 \aproblem{
 	\[{\ab(\dfrac{4^0x^3y^{-2}z^{-4}}{3^2x^{-1}y^3z^{-5}})}^{-3}\]
 }{
-	&=
+	&= {\ab(\dfrac{x^3y^{-2}z^{-4}}{9x^{-1}y^3z^{-5}})}^{-3}
+	\intertext{\aref*{ed}}
+	&= {\ab(\dfrac{1}{9}x^{3 + 1}y^{-2 - 3}z^{-4 + 5})}^{-3} \\
+	&= {\ab(\dfrac{1}{9}x^4y^{-5}z)}^{-3}
+	\intertext{\aref*{eop, eoq, en, ene}}
+	&= 729x^{-12}y^{15}z^{-3}
+	\intertext{\aref*{en}}
+	\afinal{$= \dfrac{729y^{15}}{x^{12}z^3}$}
 }
 
 \subsection{}
 \aproblem{
 	\[{\ab(\dfrac{18^520^3x^{-1}y^2z^4}{15^9x^{-3}y^{-2}z^{-1}})}^2\]
 }{
-	&=
+	\intertext{\aref*{eop, em}}
+	&= {\ab(\dfrac{2^53^{10}2^65^3x^{-1}y^2z^4}{3^95^9x^{-3}y^{-2}z^{-1}})}^2
+	\intertext{\aref*{em}}
+	&= {\ab(\dfrac{2^{11}3^{10}5^3x^{-1}y^2z^4}{3^95^9x^{-3}y^{-2}z^{-1}})}^2
+	\intertext{\aref*{ed}}
+	&= {(2^{11}3^{10 - 9}5^{3 - 9}x^{-1 + 3}y^{2 + 2}z^{4 + 1})}^2 \\
+	&= {(2^{11}3^{1}5^{-6}x^2y^4z^5)}^2
+	\intertext{\aref*{eop, en}}
+	&= 2^{22}3^25^{-12}x^4y^8z^{10}
+	\intertext{\aref*{ene}}
+	\afinal{$= \dfrac{2^{22}3^2x^4y^8z^{10}}{5^{12}}$}
 }
