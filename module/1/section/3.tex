@@ -10,306 +10,760 @@ Find the solution set of the following inequalities.
 \aproblem{
 	\[x - 2 < 4 - x\]
 }{
-	&=
+	2x &< 6 \\
+	x &< 3
+	\afinal{$x \in \ointerval{-\infty}{3}$}
 }
 
 \subsection{}
 \aproblem{
 	\[x + 1 > \dfrac{2x - 4}{5}\]
 }{
-	&=
+	5x + 5 &> 2x - 4 \\
+	3x &> -9 \\
+	x &> -3
+	\afinal{$x \in \ointerval{-3}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{2x - 3}{4} \geq \dfrac{7x}{2}\]
 }{
-	&=
+	2x - 3 &\geq 14x \\
+	12x &\leq -3 \\
+	x &\leq -\dfrac{3}{12} \\
+	x &\leq -\dfrac{1}{4}
+	\afinal{$x \in \linterval[scaled]{-\infty}{-\dfrac{1}{4}}$}
 }
 
 \subsection{}
 \aproblem{
 	\[-2 < 5 + 3x < 20\]
 }{
-	&=
+	-7 &< 3x < 15 \\
+	-\dfrac{7}{3} &< x < 5
+	\afinal{$x \in \ointerval[scaled]{-\dfrac{7}{3}}{5}$}
 }
 
 \subsection{}
 \aproblem{
 	\[5 \leq 3x - 4 \leq 7\]
 }{
-	&=
+	9 &\leq 3x \leq 11 \\
+	3 &\leq x \leq \dfrac{11}{3}
+	\afinal{$x \in \interval[scaled]{3}{\dfrac{11}{3}}$}
 }
 
 \subsection{}
 \aproblem{
 	\[2x - 1 \leq 3x \leq 4x + 1\]
 }{
-	&=
+	\intertext{Solve left inequality.}
+	2x - 1 &\leq 3x \\
+	x &\geq 1 \\
+	x  &\in \rinterval{1}{+\infty}
+	\intertext{Solve right inequality.}
+	3x &\leq 4x + 1 \\
+	x &\geq -1 \\
+	x &\in \rinterval{-1}{+\infty}
+	\intertext{Intersect intervals.}
+	\afinal{$x \in \rinterval{-1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[3x^2 \leq 11x - 10\]
 }{
-	&=
+	3x^2 - 11x + 10 &\leq 0 \\
+	3x^2 - 6x - 5x + 10 &\leq 0 \\
+	(3x - 5)(x - 2) &\leq 0
+	\intertext{\aref*{iq}, $c \in \ab\{\dfrac{5}{3}, 2\}$.}
+	\asigns{1}{3}{
+			{/1, $3x - 5$ /1, $x - 2$ /1, $(3x - 5)(x - 2)$ /1}
+			{, $\dfrac{5}{3}$, $2$,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \interval[scaled]{\dfrac{5}{3}}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[(x + 3)(x - 4) \geq 3x\]
 }{
-	&=
+	x^2 - 4x + 3x - 12 &\geq 3x \\
+	x^2 - 4x - 12 &\geq 0 \\
+	(x - 6)(x + 2) &\geq 0
+	\intertext{\aref*{iq}, $c \in \{-2, 6\}$.}
+	\asigns{1}{3}{
+			{/1, $x - 6$ /1, $x + 2$ /1, $(x - 6)(x + 2)$ /1}
+			{, $-2$, $6$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \linterval{-\infty}{-2} \cup \rinterval{6}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[x^3 + x \geq x^2 + 1\]
 }{
-	&=
+	x^3 - x^2 + x - 1 &\geq 0 \\
+	(x^2 + 1)(x - 1) &\geq 0
+	\intertext{$x^2 + 1$ is never negative, so only consider $x - 1$.}
+	x - 1 &\geq 0 \\
+	x &\geq 1
+	\afinal{$x \in \rinterval{1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[x^2 > 9\]
 }{
-	&=
+	x^2 - 9 &> 0 \\
+	(x - 3)(x + 3) &> 0
+	\intertext{\aref*{iq}, $c \in \{-3, 3\}$.}
+	\asigns{1}{3}{
+			{/1, $x - 3$ /1, $x + 3$ /1, $(x - 3)(x + 3)$ /1}
+			{, $-3$, $3$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-\infty}{-3} \cup \ointerval{3}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[4 - 3x - x^2 \geq 0\]
 }{
-	&=
+	x^2 + 3x - 4 &\leq 0 \\
+	(x + 4)(x - 1) &\leq 0
+	\intertext{\aref*{iq}, $c \in \{-4, 1\}$.}
+	\asigns{1}{3}{
+			{/1, $x + 4$ /1, $x - 1$ /1, $(x + 4)(x - 1)$ /1}
+			{, $-4$, $1$,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \interval{-4}{1}$}
 }
 
 \subsection{}
 \aproblem{
 	\[4x^2 + 4x + 1 < 0\]
 }{
-	&=
+	{(2x + 1)}^2 &< 0
+	\intertext{\aref*{qd}}
+	\afinal{$x \in \emptyset$}
 }
 
 \subsection{}
 \aproblem{
 	\[4x^2 + 4x > -1\]
 }{
-	&=
+	4x^2 + 4x + 1 &> 0 \\
+	{(2x + 1)}^2 &> 0
+	\intertext{This is always true unless $x = -\dfrac{1}{2}$.}
+	\afinal{$x \in \ointerval[scaled]{-\infty}{-\dfrac{1}{2}} \cup \ointerval[scaled]{-\dfrac{1}{2}}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[x^2 - 2x < 2x - 3\]
 }{
-	&=
+	x^2 - 4x + 3 &< 0 \\
+	(x - 3)(x - 1) &< 0
+	\intertext{\aref*{iq}, $c \in \{1, 3\}$.}
+	\asigns{1}{3}{
+			{/1, $x - 3$ /1, $x - 1$ /1, $(x - 3)(x - 1)$ /1}
+			{, $1$, $3$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{1}{3}$}
 }
 
 \subsection{}
 \aproblem{
 	\[(x + 4)(x^2 - 4) < 0\]
 }{
-	&=
+	(x + 4)(x - 2)(x + 2) &< 0
+	\intertext{\aref*{iq}, $c \in \{-4, -2, 2\}$.}
+	\asigns{1}{4}{
+			{/1, $x + 4$ /1, $x - 2$ /1, $x + 2$ /1, $(x + 4)(x - 2)(x + 2)$ /1}
+			{, $-4$, $-2$, $2$,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-\infty}{-4} \cup \ointerval{-2}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[x - 2 \geq (x - 2)(2x^2 - x - 14)\]
 }{
-	&=
+	(x - 2) - (x - 2)(2x^2 - x - 14) &\geq 0 \\
+	(x - 2)(1 - 2x^2 + x + 14) &\geq 0 \\
+	(x - 2)(-2x^2 + x + 15) &\geq 0 \\
+	(x - 2)(2x^2 - x - 15) &\leq 0 \\
+	(x - 2)(2x^2 - 6x + 5x - 15) &\leq 0 \\
+	(x - 2)(2x + 5)(x - 3) &\leq 0
+	\intertext{\aref*{iq}, $c \in \ab\{-\dfrac{5}{2}, 2, 3\}$.}
+	\asigns{1}{4}{
+			{/1, $x - 2$ /1, $2x + 5$ /1, $x - 3$ /1, $(x - 2)(2x + 5)(x - 3)$ /1}
+			{, $-\dfrac{5}{2}$, $2$, $3$,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,-,t,+,}
+	}
+	\afinal{$x \in \linterval[scaled]{-\infty}{-\dfrac{5}{2}} \cup \interval{2}{3}$}
 }
 
 \subsection{}
 \aproblem{
 	\[x(2x^2 - 5x - 12) \geq 2x^2 - 5x - 12\]
 }{
-	&=
+	x(2x^2 - 5x - 12) - (2x^2 - 5x - 12) &\geq 0 \\
+	(x - 1)(2x^2 - 5x - 12) &\geq 0 \\
+	(x - 1)(2x^2 - 8x + 3x - 12) &\geq 0 \\
+	(x - 1)(2x + 3)(x - 4) &\geq 0
+	\intertext{\aref*{iq}, $c \in \ab\{-\dfrac{3}{2}, 1, 4\}$.}
+	\asigns{1}{4}{
+			{/1, $x - 1$ /1, $2x + 3$ /1, $x - 4$ /1, $(x - 1)(2x + 3)(x - 4)$ /1}
+			{, $-\dfrac{3}{2}$, $1$, $4$,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,-,t,+,}
+	}
+	\afinal{$x \in \interval[scaled]{-\dfrac{3}{2}}{1} \cup \rinterval{4}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x}{x - 1} > -1\]
 }{
-	&=
+	\dfrac{x + x - 1}{x - 1} &> 0 \\
+	\dfrac{2x - 1}{x - 1} &> 0
+	\intertext{\aref*{iq}, $c \in \ab\{\dfrac{1}{2}, 1\}$.}
+	\asigns{1}{2}{
+			{/1, $2x - 1$ /1, $x - 1$ /1, $\dfrac{2x - 1}{x - 1}$ /1}
+			{, $\dfrac{1}{2}$, $1$,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval[scaled]{-\infty}{\dfrac{1}{2}} \cup \ointerval{1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x - 1}{2x + 5} \geq 0\]
 }{
-	&=
+	\intertext{\aref*{iq}, $c \in \ab\{-\dfrac{5}{2}, 1\}$, $x \neq -\dfrac{5}{2}$.}
+	\asigns{1}{2}{
+			{/1, $x - 1$ /1, $2x + 5$ /1, $\dfrac{x - 1}{2x + 5}$ /1}
+			{, $-\dfrac{5}{2}$, $1$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,}
+	}
+	\afinal{$x \in \ointerval[scaled]{-\infty}{-\dfrac{5}{2}} \cup \rinterval{1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{6 - 2x}{4 + x} > 5\]
 }{
-	&=
+	\dfrac{6 - 2x - 5x - 20}{x + 4} &> 0 \\
+	\dfrac{-7x - 14}{x + 4} &> 0 \\
+	\dfrac{x + 2}{x + 4} &< 0
+	\intertext{\aref*{iq}, $c \in \{-4, -2\}$.}
+	\asigns{1}{2}{
+			{/1, $x + 2$ /1, $x + 4$ /1, $\dfrac{x + 2}{x + 4}$ /1}
+			{, $-4$, $-2$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-4}{-2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x^2 - x - 2}{x} \leq 0\]
 }{
-	&=
+	\dfrac{(x - 2)(x + 1)}{x} &\leq 0
+	\intertext{\aref*{iq}, $c \in \{-1, 0, 2\}$, $x \neq 0$.}
+	\asigns{1}{3}{
+			{/1, $x - 2$ /1, $x + 1$ /1, $x$ /1, $\dfrac{(x - 2)(x + 1)}{x}$ /1}
+			{, $-1$, $0$, $2$,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,d,-,t,+,}
+	}
+	\afinal{$x \in \linterval{-\infty}{-1} \cup \linterval{0}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{3x - 1}{x^2 - x - 6} \leq 1\]
 }{
-	&=
+	\dfrac{3x - 1 - x^2 + x + 6}{x^2 - x - 6} &\leq 0 \\
+	\dfrac{-x^2 + 4x + 5}{x^2 - x - 6} &\leq 0 \\
+	\dfrac{x^2 - 4x - 5}{x^2 - x - 6} &\geq 0 \\
+	\dfrac{(x - 5)(x + 1)}{(x - 3)(x + 2)} &\geq 0
+	\intertext{\aref*{iq}, $c \in \{-2, -1, 3, 5\}$, $x \notin \{-2, 3\}$.}
+	\asigns{1}{3}{
+			{/1, $x - 5$ /1, $x + 1$ /1, $x - 3$ /1, $x + 2$ /1, $\dfrac{(x - 5)(x + 1)}{(x - 3)(x + 2)}$ /1}
+			{, $-2$, $-1$, $3$, $5$,}
+		\tkzTabLine{,-,t,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,d,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-\infty}{-2} \cup \rinterval{-1}{3} \cup \rinterval{5}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x}{x - 2} \leq 1\]
 }{
-	&=
+	\dfrac{x - x + 2}{x - 2} &\leq 0 \\
+	\dfrac{2}{x - 2} &\leq 0 \\
+	x - 2 &< 0 \\
+	x &< 2
+	\afinal{$x \in \ointerval{-\infty}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{1}{x - 2} \leq \dfrac{1}{x}\]
 }{
-	&=
+	\dfrac{x - x + 2}{x(x - 2)} &\leq 0 \\
+	\dfrac{2}{x(x - 2)} &\leq 0 \\
+	x(x - 2) &< 0
+	\intertext{\aref*{iq}, $c \in \{0, 2\}$.}
+	\asigns{1}{2}{
+			{/1, $x - 2$ /1, $x$ /1, $x(x - 2)$ /1}
+			{, $0$, $2$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{0}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{1}{x - 2} \leq \dfrac{1}{3}\]
 }{
-	&=
+	\dfrac{3}{x - 2} &\leq 1 \\
+	\dfrac{3 - x + 2}{x - 2} &\leq 0 \\
+	\dfrac{-x + 5}{x - 2} &\leq 0 \\
+	\dfrac{x - 5}{x - 2} &\geq 0
+	\intertext{\aref*{iq}, $c \in \{2, 5\}$, $x \neq 2$.}
+	\asigns{1}{2}{
+			{/1, $x - 5$ /1, $x - 2$ /1, $\dfrac{x - 5}{x - 2}$ /1}
+			{, $2$, $5$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-\infty}{2} \cup \rinterval{5}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x + 1}{x - 7} \geq 2 + \dfrac{1}{x - 7}\]
 }{
-	&=
+	\dfrac{x + 1 - 2x + 14 - 1}{x - 7} &\geq 0 \\
+	\dfrac{-x + 14}{x - 7} &\geq 0 \\
+	\dfrac{x - 14}{x - 7} &\leq 0 \\
+	\intertext{\aref*{iq}, $c \in \{7, 14\}$, $x \neq 7$.}
+	\asigns{1}{2}{
+			{/1, $x - 14$ /1, $x - 7$ /1, $\dfrac{x - 14}{x - 7}$ /1}
+			{, $7$, $14$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,}
+	}
+	\afinal{$x \in \linterval{7}{14}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x^2}{x + 1} \geq -5 - \dfrac{1}{x + 1}\]
 }{
-	&=
+	\dfrac{x^2 + 5x + 5 + 1}{x + 1} &\geq 0 \\
+	\dfrac{x^2 + 5x + 6}{x + 1} &\geq 0 \\
+	\dfrac{(x + 3)(x + 2)}{x + 1} &\geq 0
+	\intertext{\aref*{iq}, $c \in \{-3, -2, -1\}$, $x \neq 1$.}
+	\asigns{1}{3}{
+			{/1, $x + 3$ /1, $x + 2$ /1, $x + 1$ /1, $\dfrac{(x + 3)(x + 2)}{x + 1}$ /1}
+			{, $-3$, $-2$, $-1$,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,-,d,+,}
+	}
+	\afinal{$x \in \interval{-3}{-2} \cup \ointerval{-1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x}{(2 - x)(x + 1)} \geq 1\]
 }{
-	&=
+	\dfrac{x - (2 - x)(x + 1)}{(2 - x)(x + 1)} &\geq 0 \\
+	\dfrac{x - 2x - 2 + x^2 + x}{(2 - x)(x + 1)} &\geq 0 \\
+	\dfrac{x^2 - 2}{(2 - x)(x + 1)} &\geq 0 \\
+	\dfrac{(x - \sqrt{2})(x + \sqrt{2})}{(x - 2)(x + 1)} &\leq 0
+	\intertext{\aref*{iq}, $c \in \{\pm \sqrt{2}, -1, 2\}$, $x \notin \{-1, 2\}$.}
+	\asigns{1}{4}{
+			{/1, $x - \sqrt{2}$ /1, $x + \sqrt{2}$ /1, $x - 2$ /1, $x + 1$ /1, $\dfrac{(x - \sqrt{2})(x + \sqrt{2})}{(x - 2)(x + 1)}$ /1}
+			{, $-\sqrt{2}$, $-1$, $\sqrt{2}$, $2$,}
+		\tkzTabLine{,-,t,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,t,+,}
+		\tkzTabLine{,+,t,-,d,+,t,-,d,+,}
+	}
+	\afinal{$x \in \rinterval{-\sqrt{2}}{-1} \cup \rinterval{\sqrt{2}}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{2x - 7}{x^2 - 6x + 8} \leq 1\]
 }{
-	&=
+	\dfrac{2x - 7 - x^2 + 6x - 8}{x^2 - 6x + 8} &\leq 0 \\
+	\dfrac{-x^2 + 8x - 15}{x^2 - 6x + 8} &\leq 0 \\
+	\dfrac{x^2 - 8x + 15}{x^2 - 6x + 8} &\geq 0 \\
+	\dfrac{(x - 5)(x - 3)}{(x - 4)(x - 2)} &\geq 0
+	\intertext{\aref*{iq}, $c \in \{2, 3, 4, 5\}$, $x \notin \{2, 4\}$.}
+	\asigns{1}{3}{
+			{/1, $x - 5$ /1, $x - 3$ /1, $x - 4$ /1, $x - 2$ /1, $\dfrac{(x - 5)(x - 3)}{(x - 4)(x - 2)}$ /1}
+			{, $2$, $3$, $4$, $5$,}
+		\tkzTabLine{,-,t,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,d,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-\infty}{2} \cup \rinterval{3}{4} \cup \rinterval{5}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{x}{x + 1} \geq \dfrac{2}{x + 3}\]
 }{
-	&=
+	\dfrac{x^2 + 3x - 2x - 2}{(x + 1)(x + 3)} &\geq 0 \\
+	\dfrac{x^2 + x - 2}{(x + 1)(x + 3)} &\geq 0 \\
+	\dfrac{(x + 2)(x - 1)}{(x + 1)(x + 3)} &\geq 0
+	\intertext{\aref*{iq}, $c \in \{-3, -2, -1, 1\}$, $x \notin \{-3, -1\}$.}
+	\asigns{1}{3}{
+			{/1, $x + 2$ /1, $x - 1$ /1, $x + 1$ /1, $x + 3$ /1, $\dfrac{(x + 2)(x - 1)}{(x + 1)(x + 3)}$ /1}
+			{, $-3$, $-2$, $-1$, $1$,}
+		\tkzTabLine{,-,t,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,+,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,d,-,t,+,}
+	}
+	\afinal{$x \in \ointerval{-\infty}{-3} \cup \rinterval{-2}{-1} \cup \rinterval{1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{4}{2x - 1} < \dfrac{1}{x + 1}\]
 }{
-	&=
+	\dfrac{4x + 4 - 2x + 1}{(2x - 1)(x + 1)} &< 0 \\
+	\dfrac{2x + 5}{(2x - 1)(x + 1)} &< 0
+	\intertext{\aref*{iq}, $c \in \ab\{-\dfrac{5}{2}, -1, \dfrac{1}{2}\}$.}
+	\asigns{1}{3}{
+			{/1, $2x + 5$ /1, $2x - 1$ /1, $x + 1$ /1, $\dfrac{2x + 5}{(2x - 1)(x + 1)}$ /1}
+			{, $-\dfrac{5}{2}$, $-1$, $\dfrac{1}{2}$,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,t,-,t,+,}
+	}
+	\afinal{$x \in \ointerval[scaled]{-\infty}{-\dfrac{5}{2}} \cup \ointerval[scaled]{-1}{\dfrac{1}{2}}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{6}{3w - 4} \geq w + 1\]
 }{
-	&=
+	\dfrac{6 - 3w^2 + 4w - 3w + 4}{3w - 4} &\geq 0 \\
+	\dfrac{-3w^2 + w + 10}{3w - 4} &\geq 0 \\
+	\dfrac{3w^2 - w - 10}{3w - 4} &\leq 0 \\
+	\dfrac{3w^2 - 6w + 5w - 10}{3w - 4} &\leq 0 \\
+	\dfrac{(3w + 5)(w - 2)}{3w - 4} &\leq 0
+	\intertext{\aref*{iq}, $c \in \ab\{-\dfrac{5}{3}, \dfrac{4}{3}, 2\}$, $w \neq \dfrac{4}{3}$.}
+	\asigns{1}{3}{
+			{/1, $3w + 5$ /1, $w - 2$ /1, $3w - 4$ /1, $\dfrac{(3w + 5)(w - 2)}{3w - 4}$ /1}
+			{, $-\dfrac{5}{3}$, $\dfrac{4}{3}$, $2$,}
+		\tkzTabLine{,-,t,+,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,-,t,+,}
+		\tkzTabLine{,-,t,-,t,+,t,+,}
+		\tkzTabLine{,-,t,+,d,-,t,+,}
+	}
+	\afinal{$w \in \linterval[scaled]{-\infty}{-\dfrac{5}{3}} \cup \linterval[scaled]{\dfrac{4}{3}}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\dfrac{2x + 1}{4} \leq \dfrac{2x}{3} + \dfrac{1}{6}\]
 }{
-	&=
+	6x + 3 &\leq 8x + 2 \\
+	2x &\geq 1 \\
+	x &\geq \dfrac{1}{2}
+	\afinal{$x \in \rinterval[scaled]{\dfrac{1}{2}}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[|x + 2| \geq 3\]
 }{
-	&=
+	\intertext{\aref*{iav}, positive case.}
+	x + 2 &\geq 3 \\
+	x &\geq 1
+	\intertext{\aref*{iav}, negative case.}
+	x + 2 &\leq -3 \\
+	x &\leq -5
+	\intertext{\aref*{iav}, unite intervals.}
+	\afinal{$x \in \linterval{-\infty}{-5} \cup \rinterval{1}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[|3 - 2x| > 2\]
 }{
-	&=
+	\intertext{\aref*{iav}, positive case.}
+	3 - 2x &> 2 \\
+	2x &< 1 \\
+	x &< \dfrac{1}{2}
+	\intertext{\aref*{iav}, negative case.}
+	3 - 2x &< -2 \\
+	2x &> 5 \\
+	x &> \dfrac{5}{2}
+	\intertext{\aref*{iav}, unite intervals.}
+	\afinal{$x \in \ointerval[scaled]{-\infty}{\dfrac{1}{2}} \cup \ointerval[scaled]{\dfrac{5}{2}}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[|3 + 2x| + 8 \leq 7\]
 }{
-	&=
+	|3 + 2x| \leq -1
+	\intertext{\aref*{avd}}
+	\afinal{$x \in \emptyset$}
 }
 
 \subsection{}
 \aproblem{
 	\[|3x - 1| + 2 \geq 1\]
 }{
-	&=
+	|3x - 1| &\geq -1
+	\intertext{\aref*{avd}}
+	\afinal{$x \in \mathbb{R}$}
 }
 
 \subsection{}
 \aproblem{
 	\[|x^2 - 6x + 7| \geq 2\]
 }{
-	&=
+	\intertext{\aref*{iav}, positive case.}
+	x^2 - 6x + 7 &\geq 2 \\
+	x^2 - 6x + 5 &\geq 0 \\
+	(x - 5)(x - 1) &\geq 0
+	\intertext{\aref*{iq}, $c \in \{1, 5\}$.}
+	\asigns{1}{3}{
+			{/1, $x - 5$ /1, $x - 1$ /1, $(x - 5)(x - 1)$ /1}
+			{, $1$, $5$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,t,-,t,+,}
+	}
+	x &\in \linterval{-\infty}{1} \cup \rinterval{5}{+\infty}
+	\intertext{\aref*{iav}, negative case.}
+	x^2 - 6x + 7 &\leq -2 \\
+	x^2 - 6x + 9 &\leq 0 \\
+	{(x - 3)}^2 &\leq 0
+	\intertext{This is only true if $x = 3$. \aref*{iav}, unite intervals.}
+	\afinal{$x \in \linterval{-\infty}{1} \cup \{3\} \cup \rinterval{5}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\ab|\dfrac{3x + 9}{2x - 2}| < -3\]
 }{
-	&=
+	\intertext{\aref*{avd}}
+	\afinal{$x \in \emptyset$}
 }
 
 \subsection{}
 \aproblem{
 	\[\ab|\dfrac{4}{x} + 1| \geq 3\]
 }{
-	&=
+	\intertext{\aref*{iav}, positive case.}
+	\dfrac{4}{x} + 1 &\geq 3 \\
+	\dfrac{4 + x - 3x}{x} &\geq 0 \\
+	\dfrac{4 - 2x}{x} &\geq 0 \\
+	\dfrac{x - 2}{x} &\leq 0
+	\intertext{\aref*{iq}, $c \in \{0, 2\}$, $x \neq 0$.}
+	\asigns{1}{2}{
+			{/1, $x - 2$ /1, $x$ /1, $\dfrac{x - 2}{x}$ /1}
+			{, $0$, $2$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,}
+	}
+	x &\in \linterval{0}{2}
+	\intertext{\aref*{iav}, negative case.}
+	\dfrac{4}{x} + 1 &\leq -3 \\
+	\dfrac{4 + x + 3x}{x} &\leq 0 \\
+	\dfrac{4x + 4}{x} &\leq 0 \\
+	\dfrac{x + 1}{x} &\leq 0
+	\intertext{\aref*{iq}, $c \in \{-1, 0\}$, $x \neq 0$.}
+	\asigns{1}{2}{
+			{/1, $x + 1$ /1, $x$ /1, $\dfrac{x + 1}{x}$ /1}
+			{, $-1$, $0$,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,+,t,-,d,+,}
+	}
+	x &\in \rinterval{-1}{0}
+	\intertext{\aref*{iav}, unite intervals.}
+	\afinal{$x \in \rinterval{-1}{0} \cup \linterval{0}{2}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\ab|\dfrac{x}{2x - 3}| \leq 1\]
 }{
-	&=
+	\intertext{\aref*{iav}, positive case.}
+	\dfrac{x}{2x - 3} &\leq 1 \\
+	\dfrac{x - 2x + 3}{2x - 3} &\leq 0 \\
+	\dfrac{-x + 3}{2x - 3} &\leq 0 \\
+	\dfrac{x - 3}{2x - 3} &\geq 0
+	\intertext{\aref*{iq}, $c \in \ab\{\dfrac{3}{2}, 3\}$, $x \neq \dfrac{3}{2}$.}
+	\asigns{1}{2}{
+			{/1, $x - 3$ /1, $2x - 3$ /1, $\dfrac{x - 3}{2x - 3}$ /1}
+			{, $\dfrac{3}{2}$, $3$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,}
+	}
+	x &\in \ointerval[scaled]{-\infty}{\dfrac{3}{2}} \cup \rinterval{3}{+\infty}
+	\intertext{\aref*{iav}, negative case.}
+	\dfrac{x}{2x - 3} &\geq -1 \\
+	\dfrac{x + 2x - 3}{2x - 3} &\geq 0 \\
+	\dfrac{3x - 3}{2x - 3} &\geq 0 \\
+	\dfrac{x - 1}{2x - 3} &\geq 0
+	\intertext{\aref*{iq}, $c \in \ab\{1, \dfrac{3}{2}\}$, $x \neq \dfrac{3}{2}$.}
+	\asigns{1}{2}{
+			{/1, $x - 1$ /1, $2x - 3$ /1, $\dfrac{x - 1}{2x - 3}$ /1}
+			{, $1$, $\dfrac{3}{2}$,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,+,t,-,d,+,}
+	}
+	x &\in \linterval{-\infty}{1} \cup \ointerval[scaled]{\dfrac{3}{2}}{+\infty}
+	\intertext{\aref*{iav}, intersect intervals.}
+	\afinal{$x \in \linterval{-\infty}{1} \cup \rinterval{3}{+\infty}$}
 }
 
 \subsection{}
 \aproblem{
 	\[0 < |x - 5| < 2\]
 }{
-	&=
+	\intertext{Solve left inequality.}
+	|x - 5| &> 0
+	\intertext{This is always true unless $x = 5$.}
+	x &\in \linterval{-\infty}{5} \cup \rinterval{5}{+\infty}
+	\intertext{Solve right inequality.}
+	|x - 5| &< 2
+	\intertext{\aref*{iav}, positive case.}
+	x - 5 &< 2 \\
+	x &< 7 \\
+	x &\in \ointerval{-\infty}{7}
+	\intertext{\aref*{iav}, negative case.}
+	x - 5 &> -2 \\
+	x &> 3 \\
+	x &\in \ointerval{3}{+\infty}
+	\intertext{\aref*{iav}, intersect intervals.}
+	x &\in \ointerval{3}{7}
+	\intertext{Intersect intervals.}
+	\afinal{$x \in \ointerval{3}{5} \cup \ointerval{5}{7}$}
 }
 
 \subsection{}
 \aproblem{
 	\[3|8 - x| + 2 < 7 - 2|x - 8|\]
 }{
-	&=
+	\intertext{\aref*{avop}}
+	3|-1||x - 8| + 2|x - 8| &< 5 \\
+	3|x - 8| + 2|x - 8| &< 5 \\
+	5|x - 8| &< 5 \\
+	|x - 8| &< 1
+	\intertext{\aref*{iav}, positive case.}
+	x - 8 &< 1 \\
+	x &< 9 \\
+	x &\in \ointerval{-\infty}{9}
+	\intertext{\aref*{iav}, negative case.}
+	x - 8 &> -1 \\
+	x &> 7 \\
+	x &\in \ointerval{7}{+\infty}
+	\intertext{\aref*{iav}, intersect intervals.}
+	\afinal{$x \in \ointerval{7}{9}$}
 }
 
 \subsection{}
 \aproblem{
 	\[\ab|\dfrac{9 - 2x}{4x}| \geq 1\]
 }{
-	&=
+	\intertext{\aref*{avop}}
+	|-1|\ab|\dfrac{2x - 9}{4x}| &\geq 1 \\
+	\ab|\dfrac{2x - 9}{4x}| &\geq 1
+	\intertext{\aref*{iav}, positive case.}
+	\dfrac{2x - 9}{4x} &\geq 1 \\
+	\dfrac{2x - 9 - 4x}{4x} &\geq 0 \\
+	\dfrac{-2x - 9}{4x} &\geq 0 \\
+	\dfrac{2x + 9}{4x} &\leq 0
+	\intertext{\aref*{iq}, $c \in \ab\{-\dfrac{9}{2}, 0\}$, $x \neq 0$.}
+	\asigns{1}{2}{
+			{/1, $2x + 9$ /1, $4x$ /1, $\dfrac{2x + 9}{4x}$ /1}
+			{, $-\dfrac{9}{2}$, $0$,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,+,t,-,d,+,}
+	}
+	x &\in \rinterval[scaled]{-\dfrac{9}{2}}{0}
+	\intertext{\aref*{iav}, negative case.}
+	\dfrac{2x - 9}{4x} &\leq -1 \\
+	\dfrac{2x - 9 + 4x}{4x} &\leq 0 \\
+	\dfrac{6x - 9}{4x} &\leq 0 \\
+	\dfrac{2x - 3}{4x} &\leq 0
+	\intertext{\aref*{iq}, $c \in \ab\{0, \dfrac{3}{2}\}$, $x \neq 0$.}
+	\asigns{1}{2}{
+			{/1, $2x - 3$ /1, $4x$ /1, $\dfrac{2x - 3}{4x}$ /1}
+			{, $0$, $\dfrac{3}{2}$,}
+		\tkzTabLine{,-,t,-,t,+,}
+		\tkzTabLine{,-,t,+,t,+,}
+		\tkzTabLine{,+,d,-,t,+,}
+	}
+	x &\in \linterval[scaled]{0}{\dfrac{3}{2}}
+	\intertext{\aref*{iav}, unite intervals.}
+	\afinal{$x \in \rinterval[scaled]{-\dfrac{9}{2}}{0} \cup \linterval[scaled]{0}{\dfrac{3}{2}}$}
 }
