@@ -168,8 +168,6 @@ $ (a + b i)(c + d i) = (a c - b d) + (a d + b c)i $
 8.
 $ (a + b i)/(c + d i) = (a c + b d)/(c^2 + d^2) + (b c - a d)/(c^2 + d^2)i $
 
-
-
 #pagebreak()
 
 
