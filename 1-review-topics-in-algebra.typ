@@ -16,6 +16,8 @@
 	email: "atraphaxia@gmail.com"
 )
 
+#show: intertext-rule
+
 
 
 = Notes
@@ -32,6 +34,8 @@ $ a/b dot c/d = (a c)/(b d) $
 $ a/b div c/d
 	&= a/b dot d/c \
 	&= (a d)/(b c) $
+
+#pagebreak()
 
 
 
@@ -79,31 +83,86 @@ $ x^2 + (a + b)x + a b = (x + a)(x + b) $
 6. Complex Trinomial
 $ a c x^2 + (a d + b c)x + b d = (a x + b)(c x + d) $
 
+#pagebreak()
+
 
 
 == Rational Expressions
 
-- Lowest Terms
-	1. Factor the numerator and denominator.
-	2. Cancel all common factors.
+#problem[
+	Lowest Terms
+	$ (x^2 - 16)/(x^2 - 8x + 16) $
+][
+	$ #intertext[1. Factor the numerator and denominator.]
+	(x^2 - 16)/(x^2 - 8x + 16)
+		&= ((x - 4)(x + 4))/(x - 4)^2 \
 
-- Products and Quotients
-	1. Factor the numerators and denominators of all fractions.
-	2. Cancel all common factors.
+	#intertext[2. Cancel all common factors.]
+		&= (cancel((x - 4))(x + 4))/(x - 4)^cancel(2) $
 
-- Sums and Differences
-	1. Find the LCD of all fractions.
-	2. Rewrite every fraction with the equivalent fraction using the LCD as the denominator.
-	3. Add and/or subtract each numerator and copy the LCD to get the numerator and denominator of the resultant fraction, respectively.
-	4. Simplify the result into lowest terms.
+	$ final((x^2 - 16)/(x^2 - 8x + 16) = (x + 4)/(x - 4)) $
+]
+
+#problem[
+	Products and Quotients
+	$ (x^2 - 7x + 12)/(x - 2) div (9 - x^2)/(x^2 - 4) $
+][
+	$ #intertext[1. Replace quotients with the product of the reciprocals of the divisors.]
+	(x^2 - 7x + 12)/(x - 2) div (9 - x^2)/(x^2 - 4)
+		&= (x^2 - 7x + 12)/(x - 2) dot (x^2 - 4)/(9 - x^2) \
+
+	#intertext[2. Factor the numerator and denominator of all fractions.]
+		&= ((x - 4)(x - 3))/(x - 2) dot ((x - 2)(x + 2))/((3 - x)(3 + x)) \
+		&= ((x - 4)(x - 3))/(x - 2) dot ((x - 2)(x + 2))/(-(x - 3)(x + 3))
+
+	#intertext[3. Cancel all common factors.]
+		&= ((x - 4)cancel((x - 3)))/cancel(x - 2) dot (cancel((x - 2))(x + 2))/(-cancel((x - 3))(x + 3)) $
+
+	$ final((x^2 - 7x + 12)/(x - 2) div (9 - x^2)/(x^2 - 4) = -((x - 4)(x + 2))/(x + 3)) $
+]
+
+#problem[
+	Sums and Differences
+	$ (x - 2)/(x^2 - 1) - (x + 2)/(x - 1)^2 $
+][
+	$ #intertext[1. Factor the numerator and denominator of all fractions.]
+	(x - 2)/(x^2 - 1) - (x + 2)/(x - 1)^2
+		&= (x - 2)/((x - 1)(x + 1)) - (x + 2)/(x - 1)^2 \
+
+	#intertext[2. Find the LCD of all fractions. Rewrite every fraction with the equivalent fraction using the LCD as the denominator.]
+		&= ((x - 2)(x - 1))/((x - 1)^2 (x + 1)) - ((x + 2)(x + 1))/((x - 1)^2 (x + 1)) \
+
+	#intertext[3. Add and/or subtract all fractions, then simplify the result into lowest terms.]
+		&= (x^2 - x - 2x + 2)/((x - 1)^2 (x + 1)) - (x^2 + x + 2x + 2)/((x - 1)^2 (x + 1)) \
+		&= (x^2 - 3x + 2)/((x - 1)^2 (x + 1)) - (x^2 + 3x + 2)/((x - 1)^2 (x + 1)) \
+		&= (x^2 - 3x + 2 - x^2 - 3x - 2)/((x - 1)^2 (x + 1)) $
+
+	$ final((x - 2)/(x^2 - 1) - (x + 2)/(x - 1)^2 = (-6x)/((x - 1)^2 (x + 1))) $
+]
+
+#pagebreak()
 
 
 
 == Complex Fractions
 
-1. Find the LCD of all fractions in the numerator and denominator.
-2. Multiply the numerator and denominator with the LCD.
-3. Cancel all common factors.
+#problem[
+	$ (x/y - y/x)/(x/y^2 + 1/y) $
+][
+	$ #intertext[1. Find the LCD of all fractions in the numerator and denominator. Multiply the numerator and denominator with the LCD.]
+	(x/y - y/x)/(x/y^2 + 1/y)
+		&= (x/y - y/x)/(x/y^2 + 1/y) dot (x y^2)/(x y^2) \
+		&= (x^2 y - y^3)/(x^2 + x y) \
+
+	#intertext[2. Factor the numerator and denominator.]
+		&= (y(x^2 - y^2))/(x(x + y)) \
+		&= (y(x - y)(x + y))/(x(x + y)) \
+
+	#intertext[3. Cancel all common factors.]
+		&= (y(x - y) cancel((x + y)))/(x cancel((x + y))) $
+
+	$ final((x/y - y/x)/(x/y^2 + 1/y) = (y(x - y))/x) $
+]
 
 #pagebreak()
 
@@ -126,13 +185,37 @@ $ root(n, a b) = root(n, a) dot root(n, b) $
 5.
 $ root(n, a/b) = root(n, a)/root(n, b) $
 
+#pagebreak()
+
 
 
 == Rationalizing
 
-- If the radicand is a fraction with an $n$th root, multiply the numerator and denominator with another $n$th root that will eliminate the radical in the denominator.
+#problem[
+	Fraction with a Product of Radicals in the Denominator
+	$ root(3, (10y^4)/(3x^2)) $
+][
+	$ #intertext[1. Multiply the numerator and denominator with another radical that will eliminate the radical in the denominator.]
+	root(3, (10y^4)/(3x^2))
+		&= root(3, 10y^4)/root(3, 3x^2) \
+		&= root(3, 10y^4)/root(3, 3x^2) dot root(3, 9x)/root(3, 9x) \
+		&= root(3, 90x y^4)/root(3, 27x^3) $
 
-- If the radicand is a sum or difference with at least one radical, use the Difference of Two Squares or the Sum and Difference of Two Cubes.
+	$ final(root(3, (10y^4)/(3x^2)) = (y root(3, 90x y))/(3x)) $
+]
+
+#problem[
+	Fraction with a Sum or Difference of Radicals in the Denominator
+	$ (sqrt(3x^8) + sqrt(2x^8))/(sqrt(3x^8) - sqrt(2x^8)) $
+][
+	$ #intertext[1. Multiply the numerator and denominator with another sum or difference of radicals in order to complete the Difference of Two Squares or the Sum and Difference of Two Cubes in the denominator.]
+	(sqrt(3x^8) + sqrt(2x^8))/(sqrt(3x^8) - sqrt(2x^8))
+		&= (sqrt(3x^8) + sqrt(2x^8))/(sqrt(3x^8) - sqrt(2x^8)) dot (sqrt(3x^8) + sqrt(2x^8))/(sqrt(3x^8) + sqrt(2x^8)) \
+		&= (3x^8 + 2sqrt(6x^16) + 2x^8)/(3x^8 - 2x^8) \
+		&= (5x^8 + 2x^8 sqrt(6))/x^8 $
+
+	$ final((sqrt(3x^8) + sqrt(2x^8))/(sqrt(3x^8) - sqrt(2x^8)) = 5 + 2sqrt(6)) $
+]
 
 #pagebreak()
 
