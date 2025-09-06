@@ -968,107 +968,192 @@ Perform the indicated operations and simplify.
 #problem[
 	$ overline(1 - i) $
 ][
-
+	$ final(overline(1 - i) = 1 + i) $
 ]
 
 #problem[
 	$ overline(5i + 2) $
 ][
-
+	$ final(overline(5i + 2) = 2 - 5i) $
 ]
 
 #problem[
 	$ overline(5 - i) - overline(5 + i) $
 ][
+	$ overline(5 - i) - overline(5 + i)
+		&= 5 + i - (5 - i) \
+		&= 5 + i - 5 + i $
 
+	$ final(overline(5 - i) - overline(5 + i) = 2i) $
 ]
 
 #problem[
 	$ sqrt(-1) - sqrt(3) + sqrt(2) - sqrt(-4) $
 ][
+	$ sqrt(-1) - sqrt(3) + sqrt(2) - sqrt(-4)
+		&= i - sqrt(3) + sqrt(2) - 2i $
 
+	$ final(sqrt(-1) - sqrt(3) + sqrt(2) - sqrt(-4) = sqrt(2) - sqrt(3) - i) $
 ]
 
 #problem[
 	$ (4 - 2sqrt(-45)) - overline((3 - sqrt(-20))) $
 ][
+	$ (4 - 2sqrt(-45)) - overline((3 - sqrt(-20)))
+		&= 4 - 2sqrt(-9) sqrt(5) - overline((3 - sqrt(-4) sqrt(5))) \
+		&= 4 - 2(3i) sqrt(5) - overline((3 - 2i sqrt(5))) \
+		&= 4 - 6i sqrt(5) - (3 + 2i sqrt(5)) \
+		&= 4 - 6i sqrt(5) - 3 - 2i sqrt(5) $
 
+	$ final((4 - 2sqrt(-45)) - overline((3 - sqrt(-20))) = 1 - 8i sqrt(5)) $
 ]
 
 #problem[
 	$ sqrt(-12) sqrt(-75) $
 ][
+	$ sqrt(-12) sqrt(-75)
+		&= sqrt(-4) sqrt(3) sqrt(-25) sqrt(3) \
+		&= 3(2i)(5i) \
+		&= 30i^2 $
 
+	$ final(sqrt(-12) sqrt(-75) = -30) $
 ]
 
 #problem[
 	$ 3i(i^2 - i^3 + 5i^5 - i^(-2)) $
 ][
+	$ 3i(i^2 - i^3 + 5i^5 - i^(-2))
+		&= 3i^3 - 3i^4 + 15i^6 - 3i^(-1) \
+		&= 3(-i) - 3(1) + 15(-1) - 3(-i) \
+		&= -3i - 3 - 15 + 3i $
 
+	$ final(3i(i^2 - i^3 + 5i^5 - i^(-2)) = -18) $
 ]
 
 #problem[
 	$ (3 - 5i)(7 + 4i) $
 ][
+	$ (3 - 5i)(7 + 4i)
+		&= 21 + 12i - 35i - 20i^2 \
+		&= 21 + 12i - 35i + 20 $
 
+	$ final((3 - 5i)(7 + 4i) = 41 - 23i) $
 ]
 
 #problem[
 	$ (1 + 2i)(3 - 4i) $
 ][
+	$ (1 + 2i)(3 - 4i)
+		&= 3 - 4i + 6i - 8i^2 \
+		&= 3 - 4i + 6i + 8 $
 
+	$ final((1 + 2i)(3 - 4i) = 11 + 2i) $
 ]
 
 #problem[
 	$ (i - 1) overline((5 + 3i)) $
 ][
+	$ (i - 1) overline((5 + 3i))
+		&= (i - 1)(5 - 3i) \
+		&= 5i - 3i^2 - 5 + 3i \
+		&= 5i + 3 - 5 + 3i $
 
+	$ final((i - 1) overline((5 + 3i)) = -2 + 8i) $
 ]
 
 #problem[
 	$ (2i - 3)^2 $
 ][
+	$ (2i - 3)^2
+		&= 4i^2 - 12i + 9
+		&= -4 - 12i + 9 $
 
+	$ final((2i - 3)^2 = 5 - 12i) $
 ]
 
 #problem[
 	$ (3 + 4i)/(2 - i) $
 ][
+	$ (3 + 4i)/(2 - i)
+		&= (3 + 4i)/(2 - i) dot (2 + i)/(2 + i) \
+		&= (6 + 3i + 8i + 4i^2)/(4 - i^2) \
+		&= (6 + 3i + 8i - 4)/(4 + 1) \
+		&= (2 + 11i)/5 $
 
+	$ final((3 + 4i)/(2 - i) = 2/5 + 11/5 i) $
 ]
 
 #problem[
 	$ (sqrt(-9) + sqrt(8))/sqrt(-1) $
 ][
+	$ (sqrt(-9) + sqrt(8))/sqrt(-1)
+		&= (3i + 2sqrt(2))/i \
+		&= 3 + 2i^(-1) sqrt(2) \ $
 
+	$ final((sqrt(-9) + sqrt(8))/sqrt(-1) = 3 - 2i sqrt(2)) $
 ]
 
 #problem[
 	$ (3i - 2)/(3i + 2) $
 ][
+	$ (3i - 2)/(3i + 2)
+		&= (3i - 2)/(3i + 2) dot (3i - 2)/(3i - 2) \
+		&= (9i^2 - 12i + 4)/(9i^2 - 4) \
+		&= (-9 - 12i + 4)/(-13) \
+		&= (-5 - 12i)/(-13) \
+		&= (5 + 12i)/13 $
 
+	$ final((3i - 2)/(3i + 2) = 5/13 + 12/13 i ) $
 ]
 
 #problem[
 	$ ((1 - i)(3i + 1))/(2i - 1) $
 ][
+	$ ((1 - i)(3i + 1))/(2i - 1)
+		&= (3i + 1 - 3i^2 - i)/(2i - 1) \
+		&= (3i + 1 + 3 - i)/(2i - 1) \
+		&= (4 + 2i)/(2i - 1) dot (2i + 1)/(2i + 1) \
+		&= (8i + 4 + 4i^2 + 2i)/(4i^2 - 1) \
+		&= (8i + 4 - 4 + 2i)/(-4 - 1) \
+		&= (10i)/(-5) $
 
+	$ final(((1 - i)(3i + 1))/(2i - 1) = -2i) $
 ]
 
 #problem[
 	$ ((-1)/2 + sqrt(3)/2 i)(sqrt(2)/2 - sqrt(2)/2 i) $
 ][
+	$ ((-1)/2 + sqrt(3)/2 i)(sqrt(2)/2 - sqrt(2)/2 i)
+		&= -sqrt(2)/4 + sqrt(2)/4 i + sqrt(6)/4 i - sqrt(6)/4 i^2 \
+		&= -sqrt(2)/4 + sqrt(2)/4 i + sqrt(6)/4 i + sqrt(6)/4 $
 
+	$ final(((-1)/2 + sqrt(3)/2 i)(sqrt(2)/2 - sqrt(2)/2 i) = (sqrt(6) - sqrt(2))/4 + (sqrt(6) + sqrt(2))/4 i) $
 ]
 
 #problem[
 	$ (7 + i - 4(3 - i))/(6 - 5i^3) $
 ][
+	$ (7 + i - 4(3 - i))/(6 - 5i^3)
+		&= (7 + i - 12 + 4i)/(6 + 5i) \
+		&= (-5 + 5i)/(6 + 5i) dot (6 - 5i)/(6 - 5i) \
+		&= (-30 + 25i + 30i - 25i^2)/(36 - 25i^2) \
+		&= (-30 + 25i + 30i + 25)/(36 + 25) \
+		&= (-5 + 55i)/61 $
 
+	$ final((7 + i - 4(3 - i))/(6 - 5i^3) = -5/61 + 55/61 i) $
 ]
 
 #problem[
 	$ (2 - 2 overline((i + 1)))/(2 - sqrt(-4)) $
 ][
+	$ (2 - 2 overline((i + 1)))/(2 - sqrt(-4))
+		&= (2 - 2(1 - i))/(2 - 2i) \
+		&= (2 - 2 + 2i)/(2 - 2i) \
+		&= (2i)/(2 - 2i) dot (2 + 2i)/(2 + 2i) \
+		&= (4i + 4i^2)/(4 - 4i^2) \
+		&= (-4 + 4i)/(4 + 4) \
+		&= (-4 + 4i)/8 \
+		&= (-1 + i)/2 $
 
+	$ final((2 - 2 overline((i + 1)))/(2 - sqrt(-4)) = -1/2 + 1/2 i) $
 ]
