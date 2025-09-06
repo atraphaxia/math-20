@@ -1,10 +1,9 @@
 // SPDX-FileCopyrightText: Copyright (C) Nile Jocson <atraphaxia@gmail.com>
 // SPDX-License-Identifier: MPL-2.0
 
-// #import "@preview/physica:0.9.5": *
-#import "@preview/intextual:0.1.0": intertext-rule, intertext
-
 #import "@preview/nikonova:0.1.0": nikonova, nikonova-problem as problem, nikonova-final as final
+
+#import "@preview/intextual:0.1.0": intertext-rule, intertext
 
 
 
