@@ -734,127 +734,230 @@ Perform the indicated operations and simplify.
 #problem[
 	$ (b^(2/5) dot b^(1/3))/b^(2/15) $
 ][
+	$ (b^(2/5) dot b^(1/3))/b^(2/15)
+		&= b^(2/5 + 1/3 - 2/15) \
+		&= b^(6/15 + 5/15 - 2/15) \
+		&= b^(9/15) $
 
+	$ final((b^(2/5) dot b^(1/3))/b^(2/15) = b^(3/5)) $
 ]
 
 #problem[
 	$ (24c^(-1/2) d^(2/3))/(18c^(-1/7) d^(-3/5)) $
 ][
+	$ (24c^(-1/2) d^(2/3))/(18c^(-1/7) d^(-3/5))
+		&= 4/3 c^(-1/2 + 1/7) d^(2/3 + 3/5) \
+		&= 4/3 c^(-7/14 + 2/14) d^(10/15 + 9/15) \
+		&= 4/3 c^(-5/14) d^(19/15) $
 
+	$ final((24c^(-1/2) d^(2/3))/(18c^(-1/7) d^(-3/5)) = (4d^(19/15))/(3c^(5/14))) $
 ]
 
 #problem[
 	$ (2^(2/3) x^(1/2) y^(1/6) z)^6/(4x^(2/3) y z^(9/2)) $
 ][
+	$ (2^(2/3) x^(1/2) y^(1/6) z)^6/(4x^(2/3) y z^(9/2))
+		&= (2^4 x^3 y z^6)/(4x^(2/3) y z^(9/2)) \
+		&= 16/4 x^(3 - 2/3) z^(6 - 9/2) \
+		&= 4x^(9/3 - 2/3) z^(12/2 - 9/2) $
 
+	$ final((2^(2/3) x^(1/2) y^(1/6) z)^6/(4x^(2/3) y z^(9/2)) = 4x^(7/3) z^(3/2)) $
 ]
 
 #problem[
 	$ (u^(1/3) + (u v)^(1/6) + v^(1/3))(u^(1/6) - v^(1/6)) $
 ][
+	$ (u^(1/3) + (u v)^(1/6) + v^(1/3))(u^(1/6) - v^(1/6))
+		&= (u^(1/6) - v^(1/6))(u^(1/3) + u^(1/6) v^(1/6) + v^(1/3)) \
+		&= (root(3, u^(1/2)) - root(3, u^(1/2)))(root(3, u) + root(3, u^(1/2)) root(3, u^(1/2)) + root(3, u))  $
 
+	$ final((u^(1/3) + (u v)^(1/6) + v^(1/3))(u^(1/6) - v^(1/6)) = u^(1/2) - v^(1/2)) $
 ]
 
 #problem[
 	$ ((r^(4/3) s^(1/2) t^(-2))/(r s^(2/7) t^(3/5)))^(-10) $
 ][
+	$ ((r^(4/3) s^(1/2) t^(-2))/(r s^(2/7) t^(3/5)))^(-10)
+		&= (r^(4/3 - 1) s^(1/2 - 2/7) t^(-2 - 3/5))^(-10) \
+		&= (r^(4/3 - 3/3) s^(7/14 - 4/14) t^(-10/5 - 3/5))^(-10) \
+		&= (r^(1/3) s^(3/14) t^(-13/5))^(-10) \
+		&= r^(-10/3) s^(-30/14) t^(130/5) \
+		&= r^(-10/3) s^(-15/7) t^26 $
 
+	$ final(((r^(4/3) s^(1/2) t^(-2))/(r s^(2/7) t^(3/5)))^(-10) = t^26/(r^(10/3) s^(15/7))) $
 ]
 
 #problem[
 	$ root(3, -8^4) $
 ][
+	$ root(3, -8^4)
+		&= -(root(3, 8))^4 \
+		&= -2^4 $
 
+	$ final(root(3, -8^4) = -16) $
 ]
 
 #problem[
 	$ sqrt(384x^3 y^6) $
 ][
+	$ sqrt(384x^3 y^6)
+		&= sqrt(64x^2 y^6) sqrt(6x) $
 
+	$ final(sqrt(384x^3 y^6) = 8x y^3 sqrt(6x)) $
 ]
 
 #problem[
 	$ root(4, 9x^8) $
 ][
+	$ root(4, 9x^8)
+		&= root(4, 3^2) root(4, x^8) $
 
+	$ final(root(4, 9x^8) = x^2 sqrt(3)) $
 ]
 
 #problem[
 	$ sqrt(root(3, 4a^4 b^4)) $
 ][
+	$ sqrt(root(3, 4a^4 b^4))
+		&= root(3, sqrt(4a^4 b^4)) $
 
+	$ final(sqrt(root(3, 4a^4 b^4)) = root(3, 2a^2 b^2)) $
 ]
 
 #problem[
 	$ sqrt((25c^5)/(12a^3 b)) $
 ][
+	$ sqrt((25c^5)/(12a^3 b))
+		&= sqrt(25c^5)/sqrt(12a^3b) \
+		&= (sqrt(25c^4) sqrt(c))/(sqrt(4a^2) sqrt(3a b)) \
+		&= (5c^2 sqrt(c))/(2a sqrt(3a b)) \
+		&= (5c^2 sqrt(c))/(2a sqrt(3a b)) dot sqrt(3a b)/sqrt(3a b) \
+		&= (5c^2 sqrt(3a b c))/(2a(3a b)) $
 
+	$ final(sqrt((25c^5)/(12a^3 b)) = (5c^2 sqrt(3a b c))/(6a^2 b)) $
 ]
 
 #problem[
 	$ (2x^2 y)/root(3, 12x^2 y^4) $
 ][
+	$ (2x^2 y)/root(3, 12x^2 y^4)
+		&= (2x^2 y)/(root(3, y^3) root(3, 12x^2 y)) \
+		&= (2x^2 y)/(y root(3, 12x^2 y)) \
+		&= (2x^2)/root(3, 12x^2 y) dot root(3, 18x y^2)/root(3, 18x y^2) \
+		&= (2x^2 root(3, 18x y^2))/root(3, 216x^3 y^3) \
+		&= (2x^2 root(3, 18x y^2))/(6x y) $
 
+	$ final((2x^2 y)/root(3, 12x^2 y^4) = (x root(3, 18x y^2))/(3y)) $
 ]
 
 #problem[
 	$ sqrt(2) dot root(3, 2) $
 ][
+	$ sqrt(2) dot root(3, 2)
+		&= 2^(1/2) dot 2^(1/3) \
+		&= 2^(1/2 + 1/3) \
+		&= 2^(3/6 + 2/6) $
 
+	$ final(sqrt(2) dot root(3, 2) = 2^(5/6)) $
 ]
 
 #problem[
 	$ (x^2 - 1)/sqrt(x + 1) $
 ][
+	$ (x^2 - 1)/sqrt(x + 1)
+		&= ((x - 1)(x + 1))/sqrt(x + 1) $
 
+	$ final((x^2 - 1)/sqrt(x + 1) = (x - 1) sqrt(x + 1)) $
 ]
 
 #problem[
 	$ sqrt(a^2 - b^2)/sqrt(a^2 + b^2) $
 ][
+	$ sqrt(a^2 - b^2)/sqrt(a^2 + b^2)
+		&= sqrt(a^2 - b^2)/sqrt(a^2 + b^2) dot sqrt(a^2 + b^2)/sqrt(a^2 + b^2) $
 
+	$ final(sqrt(a^2 - b^2)/sqrt(a^2 + b^2) = sqrt(a^4 - b^4)/(a^2 + b^2)) $
 ]
 
 #problem[
 	$ root(4, 36) - sqrt(54) + sqrt(96) $
 ][
+	$ root(4, 36) - sqrt(54) + sqrt(96)
+		&= root(4, 6^2) - sqrt(9) sqrt(6) + sqrt(16) sqrt(6) \
+		&= sqrt(6) - 3sqrt(6) + 4sqrt(6) $
 
+	$ final(root(4, 36) - sqrt(54) + sqrt(96) = 2sqrt(6)) $
 ]
 
 #problem[
 	$ (2 - sqrt(3))/(3 - sqrt(2)) $
 ][
+	$ (2 - sqrt(3))/(3 - sqrt(2))
+		&= (2 - sqrt(3))/(3 - sqrt(2)) dot (3 + sqrt(2))/(3 + sqrt(2)) \
+		&= (6 + 2sqrt(2) - 3sqrt(3) - sqrt(6))/(9 - 2) $
 
+	$ final((2 - sqrt(3))/(3 - sqrt(2)) = (6 + 2sqrt(2) - 3sqrt(3) - sqrt(6))/7) $
 ]
 
 #problem[
 	$ (sqrt(6) - sqrt(5))/(sqrt(5) + sqrt(6)) $
 ][
+	$ (sqrt(6) - sqrt(5))/(sqrt(5) + sqrt(6))
+		&= (sqrt(6) - sqrt(5))/(sqrt(5) + sqrt(6)) dot (sqrt(5) - sqrt(6))/(sqrt(5) - sqrt(6)) \
+		&= (sqrt(30) - sqrt(36) - sqrt(25) + sqrt(30))/(5 - 6) \
+		&= (2sqrt(30) - 6 - 5)/(-1) \
+		&= -(2sqrt(30) - 11) $
 
+	$ final((sqrt(6) - sqrt(5))/(sqrt(5) + sqrt(6)) = 11 - 2sqrt(30)) $
 ]
 
 #problem[
 	$ (x^2 - 2x + 1)/(sqrt(x) + 1) $
 ][
+	$ (x^2 - 2x + 1)/(sqrt(x) + 1)
+		&= (x - 1)^2/(sqrt(x) + 1) dot (sqrt(x) - 1)/(sqrt(x) - 1) \
+		&= ((x - 1)^2 (sqrt(x) - 1))/(x - 1) $
 
+	$ final((x^2 - 2x + 1)/(sqrt(x) + 1) = (x - 1)(sqrt(x) - 1)) $
 ]
 
 #problem[
 	$ 6/sqrt(3 - sqrt(3)) $
 ][
+	$ 6/sqrt(3 - sqrt(3))
+		&= 6/sqrt(3 - sqrt(3)) dot sqrt(3 - sqrt(3))/sqrt(3 - sqrt(3)) \
+		&= (6sqrt(3 - sqrt(3)))/(3 - sqrt(3)) \
+		&= (6sqrt(3 - sqrt(3)))/(3 - sqrt(3)) dot (3 + sqrt(3))/(3 + sqrt(3)) \
+		&= (6(3 + sqrt(3)) sqrt(3 - sqrt(3)))/(9 - 3) \
+		&= (6(3 + sqrt(3)) sqrt(3 - sqrt(3)))/6 $
 
+	$ final(6/sqrt(3 - sqrt(3)) = (3 + sqrt(3)) sqrt(3 - sqrt(3))) $
 ]
 
 #problem[
 	$ 1/(root(3, 4) + root(3, -27)) $
 ][
+	$ 1/(root(3, 4) + root(3, -27))
+		&= 1/(root(3, 4) - 3) \
+		&= 1/(root(3, 4) - 3) dot (root(3, 4^2) + 3root(3, 4) + 9)/(root(3, 4^2) + 3root(3, 4) + 9) \
+		&= (root(3, 16) + 3root(3, 4) + 9)/(4 - 27) $
 
+	$ final(1/(root(3, 4) + root(3, -27)) = (root(3, 16) + 3root(3, 4) + 9)/(-23)) $
 ]
 
 #problem[
 	$ (2sqrt(5))/sqrt(8) + 9/root(3, 16) $
 ][
+	$ (2sqrt(5))/sqrt(8) + 9/root(3, 16)
+		&= (2sqrt(5))/(sqrt(4) sqrt(2)) + 9/(root(3, 8) root(3, 2)) \
+		&= (2sqrt(5))/(2sqrt(2)) + 9/(2root(3, 2)) \
+		&= (2sqrt(5) root(3, 2))/(2sqrt(2) root(3, 2)) + (9sqrt(2))/(2sqrt(2) root(3, 2)) \
+		&= (2sqrt(5) root(3, 2) + 9sqrt(2))/(2sqrt(2) root(3, 2)) \
+		&= (2sqrt(5) root(3, 2) + 9sqrt(2))/(2sqrt(2) root(3, 2)) dot (sqrt(2) root(3, 4))/(sqrt(2) root(3, 4)) \
+		&= (2sqrt(10) root(3, 8) + 9sqrt(4) root(3, 4))/(2sqrt(4) root(3, 8)) \
+		&= (2(2) sqrt(10) + 9(2) root(3, 4))/(2(2)(2)) $
 
+	$ final((2sqrt(5))/sqrt(8) + 9/root(3, 16) = (2sqrt(10) + 9root(3, 4))/(4)) $
 ]
 
 
